@@ -1,15 +1,22 @@
 * {
 	box-sizing: border-box;
-	background-color: RGB(53,54,58);
 }
 
-body{
+html {
+	height: 100%;
+}
+
+body {
+
 	background-color: RGB(53,54,58);
+	padding: 0;
+	margin: 0;
 }
 
 #splash {
-	background-color: white;
-	height: 100%;
+	position: static;
+	background-color: black;
+	height: 500px;
 }
 
 #splash video {
@@ -18,11 +25,12 @@ body{
 
 #menubar {
 	display: flex;
+	height: 5%;
 	justify-content: space-around;
 	padding-right: 30%;
 	padding-left: 30%;
 	position: sticky;
-	bottom: 0;
+	top: 0;
 }
 
 #menubar a{
@@ -32,10 +40,8 @@ body{
     display: block;
     font-size: 16px;
     line-height: 45px;
-    position: relative;
+    position: static;
     padding: 0 14px;
-	border: 2px solid transparent;
-	border-radius: 25px;
 	outline: none;
 	font-family: sans-serif;	
     font-size: 16px;
@@ -47,21 +53,48 @@ body{
 }
 
 @keyframes buttonhover {
-	from {border: 2px solid transparent;
-  		  color: white;}
-	to 	 {border: 2px solid #fff;
-		  border-color: #03bafc;
-		  color: #03bafc;}
+	0% {color: white;}
+	50% {color: #03bafc;}
+	100% {color: white;}
 }
 
 #menubar a:hover {
-	animation: buttonhover 1s;
+	animation: buttonhover 2s infinite;
 }
 
+#about {
+	height: 95%;
+}
 
+#projects {
+	height: 95%;
+}
 
 #contact {
-	
+	height: 50%;
+	bottom: 0;
+	background-color: white;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
-#333333
+.contactdetails {
+	padding: 20px;
+	border: 2px solid #03bafc;
+	margin: 10%;
+}
+
+.contactdetails img {
+	height: 100px;
+}
+
+.links {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	padding: 20px;
+}
+
+.links div {
+	border: 2px solid #03bafc;
+	margin: 10%;
+}
