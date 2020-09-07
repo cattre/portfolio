@@ -4,10 +4,11 @@
 
 html {
 	height: 100%;
+	width: 100%;
 }
 
 body {
-
+	width: 100%;
 	background-color: RGB(53,54,58);
 	padding: 0;
 	margin: 0;
@@ -26,6 +27,7 @@ body {
 #menubar {
 	display: flex;
 	height: 5%;
+	background-color: RGB(53,54,58);
 	justify-content: space-around;
 	padding-right: 30%;
 	padding-left: 30%;
@@ -68,33 +70,48 @@ body {
 
 #projects {
 	height: 95%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.project {
+	border: 2px solid #03bafc;
+	margin: 10%;
+}
+
+#projects:nth-child(2n-1) {
+	background-color: white;
 }
 
 #contact {
+	background-color: #333333;
 	height: 50%;
 	bottom: 0;
-	background-color: white;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
-.contactdetails {
+.contact a {
 	padding: 20px;
 	border: 2px solid #03bafc;
 	margin: 10%;
 }
 
-.contactdetails img {
-	height: 100px;
+.contactdetails {
+
+}
+
+.contactdetails img,
+.links img {
+	height: 120px;
 }
 
 .links {
 	display: grid;
 	grid-template-rows: 1fr 1fr;
-	padding: 20px;
 }
 
-.links div {
-	border: 2px solid #03bafc;
-	margin: 10%;
+.links a {
+
 }
