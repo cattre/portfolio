@@ -1,0 +1,67 @@
+* {
+	box-sizing: border-box;
+	background-color: RGB(53,54,58);
+}
+
+body{
+	background-color: RGB(53,54,58);
+}
+
+#splash {
+	background-color: white;
+	height: 100%;
+}
+
+#splash video {
+	width: 100%
+}
+
+#menubar {
+	display: flex;
+	justify-content: space-around;
+	padding-right: 30%;
+	padding-left: 30%;
+	position: sticky;
+	bottom: 0;
+}
+
+#menubar a{
+	color: white;
+	text-decoration: none;
+	height: 50px;
+    display: block;
+    font-size: 16px;
+    line-height: 45px;
+    position: relative;
+    padding: 0 14px;
+	border: 2px solid transparent;
+	border-radius: 25px;
+	outline: none;
+	font-family: sans-serif;	
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .6px;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+@keyframes buttonhover {
+	from {border: 2px solid transparent;
+  		  color: white;}
+	to 	 {border: 2px solid #fff;
+		  border-color: #03bafc;
+		  color: #03bafc;}
+}
+
+#menubar a:hover {
+	animation: buttonhover 1s;
+}
+
+
+
+#contact {
+	
+}
+
+#333333
