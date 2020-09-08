@@ -261,11 +261,6 @@ q {
 	z-index: -1;
 }
 
-.links {
-	display: grid;
-	grid-template-rows: 1fr 1fr;
-}
-
 #contact a {
 	padding: 20px;
 	border: 2px solid #03bafc;
@@ -279,10 +274,22 @@ q {
     letter-spacing: .6px;
 	cursor: pointer;
 	white-space: wrap;
+	overflow: hidden;
 }
 
 #contact a:hover {
 	animation: hover 2s infinite;
+}
+
+#contact .image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	padding: 10px;
+	min-height: 100%;
 }
 
 .phoneemail {
@@ -290,13 +297,28 @@ q {
 	grid-template-columns: 1fr 1fr;
 }
 
-.phoneemail .image img {
+.phoneemail a img {
+	width: 100px;
+	transition: width 1s;
+}
+
+.phoneemail a:hover img {
 	width: 120px;
 }
 
-.links .image img {
-	width: 120px;
-	margin-bottom: 10px;
+.links {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+
+.links a img {
+	width: 60px;
+	margin: auto;
+	transition: width 1s;
+}
+
+.links a:hover img {
+	width: 80px;
 }
 
 .title {
@@ -309,15 +331,3 @@ q {
 .value {
 	font-size: 20px;
 }
-
-
-.image {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	width: 100%;
-	margin: auto;
-}
-
-
