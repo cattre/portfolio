@@ -99,6 +99,7 @@ q {
 	padding-left: 30%;
 	position: sticky;
 	top: 0;
+	z-index: 999;
 }
 
 #menubar a{
@@ -222,17 +223,33 @@ q {
 #projects {
 	height: 95%;
 	width: 100%;
+}
+
+.projectrow {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
+}
+
+.projectrow:nth-child(even) {
+	flex-direction: row-reverse;
 }
 
 .project {
 	border: 2px solid #03bafc;
-	margin: 10%;
+	margin: 20px;
+	min-width: 100px;
+	min-height: 300px;
 }
 
-#projects:nth-child(2n-1) {
-	background-color: white;
+.project:nth-child(even) {
+	flex-grow: 2;
+	flex-basis: 50%;
+}
+
+.project:nth-child(odd) {
+	flex-basis: 25%;
+	flex-shrink: 2;
 }
 
 #contact {
