@@ -236,6 +236,7 @@ q {
 #projects {
 	height: 95%;
 	width: 100%;
+	counter-reset: projects;
 }
 
 .projectrow {
@@ -254,16 +255,22 @@ q {
 	margin: 20px;
 	min-width: 400px;
 	min-height: 300px;
+	text-align: center;
+}
+
+.project::after {
+	counter-increment: projects;
+	content: 'Project ' counter(projects);
 }
 
 .project:nth-child(even) {
-	flex-grow: 2;
+	flex-grow: 1;
 	flex-basis: 50%;
 }
 
 .project:nth-child(odd) {
 	flex-basis: 25%;
-	flex-shrink: 2;
+	flex-grow: 1;
 }
 
 #contact {
