@@ -14,8 +14,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
- font-weight: 300;
- text-transform: uppercase;
+	font-weight: 300;
+	text-transform: uppercase;
 }
 
 #landing {
@@ -270,25 +270,32 @@ q {
 	background-color: #333333;
 	bottom: 0;
 //	position: sticky;
-	display: grid;
-	grid-template-columns: 2fr 1fr;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	z-index: -1;
 }
 
-#contact a {
+#contact > div {
 	padding: 20px;
 	border: 2px solid #03bafc;
-	margin: 5%;
+	margin: 20px;
     position: static;
 	outline: none;
 	font-family: sans-serif;
     font-size: 16px;
 	color: white;
-	text-decoration: none;
     letter-spacing: .6px;
 	cursor: pointer;
 	white-space: wrap;
 	overflow: hidden;
+	flex-grow: 1;
+	min-height: 300px;
+}
+
+#contact a {
+    text-decoration: inherit;
+    color: inherit;
 }
 
 #contact a:hover {
@@ -303,35 +310,32 @@ q {
 	width: 100%;
 	margin: auto;
 	padding: 10px;
-	min-height: 100%;
 }
 
-.phoneemail {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+.phone, .email {
+	min-width: 400px;
 }
 
-.phoneemail a img {
+.github, .linkedin {
+	min-width: 400px;
+}
+
+.phone a img, .email a img {
 	width: 100px;
 	transition: width 1s;
 }
 
-.phoneemail a:hover img {
+.phone a:hover img, .email a:hover img {
 	width: 120px;
 }
 
-.links {
-	display: grid;
-	grid-template-rows: 1fr 1fr;
-}
-
-.links a img {
+.github a img, .linkedin a img {
 	width: 60px;
 	margin: auto;
 	transition: width 1s;
 }
 
-.links a:hover img {
+.github a:hover img, .linkedin a:hover img {
 	width: 80px;
 }
 
