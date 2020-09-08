@@ -54,12 +54,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro {
-	display: block;
 	background-color: RGBA(53,54,58,1);
 	height: 95vh;
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 1fr 4fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+      ". a ."
+      ". b ."
+      ". c .";
 }
 
 #title {
@@ -71,6 +74,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 0;
+	align-self: center;
+	justify-self: center;
+	grid-area: a;
+	text-align: center;
 }
 
 #subtitle {
@@ -79,6 +86,8 @@ h1, h2, h3, h4, h5, h6 {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 0;
+	grid-area: b;
+	text-align: center;
 }
 
 q {
@@ -87,7 +96,9 @@ q {
 	font-style: italic;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10px;	
+	margin-top: 10px;
+	grid-area: c;
+	text-align: center;
 }
 
 #menubar {
