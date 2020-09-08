@@ -101,9 +101,8 @@ body {
 }
 
 .carousel {
-    width: 800px;
-    height: 400px;
-    background-color: yellow;
+    width: auto;
+    height: 25%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
@@ -113,8 +112,7 @@ body {
 
 .imageholder
 {
-    width: 2400px;
-    background-color: red;
+    width: 4800px;
     height: 400px;
     clear: both;
     position: relative;
@@ -125,36 +123,57 @@ body {
     transition: left 2s;
 }
 
-.slider-image
+.carouselimage
 {
     float: left;
     margin: 0px;
     padding: 0px;
     position: relative;
+	height: 400px;
 }
 
-#slider-image-1:target ~ .image-holder
+#carouselimage1:target ~ .imageholder
 {
     left: 0px;
 }
 
-#slider-image-2:target ~ .image-holder
+#carouselimage2:target ~ .imageholder
 {
     left: -800px;
 }
 
-#slider-image-3:target ~ .image-holder
+#carouselimage3:target ~ .imageholder
 {
     left: -1600px;
 }
 
-.button-holder
+#carouselimage4:target ~ .imageholder
+{
+    left: -2400px;
+}
+
+#carouselimage5:target ~ .imageholder
+{
+    left: -3200px;
+}
+
+#carouselimage6:target ~ .imageholder
+{
+    left: -4000px;
+}
+
+#carouselimage7:target ~ .imageholder
+{
+    left: -4800px;
+}
+
+.carouselbuttons
 {
     position: relative;
     top: -20px;
 }
 
-.slider-change
+.carouselaction
 {
     display: inline-block;
     height: 10px;
