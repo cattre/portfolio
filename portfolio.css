@@ -131,11 +131,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #menubar a{
-	height: 50px;
     display: block;
     font-size: 16px;
     position: static;
-    padding: 0 14px;
+    padding: 14px;
 	outline: none;
     font-size: 16px;
     text-transform: uppercase;
@@ -143,7 +142,6 @@ h1, h2, h3, h4, h5, h6 {
 	color: white;
 	text-decoration: none;
     letter-spacing: .6px;
-	line-height: 45px;
 	cursor: pointer;
 	white-space: nowrap;
 }
@@ -222,6 +220,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0px;
     position: relative;
 	height: 400px;
+	flex-basis: 0;
+	flex-grow: 1;
 }
 
 #projectlink1:target ~ .projectsholder {
