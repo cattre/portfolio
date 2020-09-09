@@ -11,6 +11,8 @@ body {
 	padding: 0;
 	margin: 0;
  	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -133,7 +135,6 @@ h1, h2, h3, h4, h5, h6 {
 #menubar a{
     display: block;
     font-size: 16px;
-    position: static;
     padding: 14px;
 	outline: none;
     font-size: 16px;
@@ -142,7 +143,6 @@ h1, h2, h3, h4, h5, h6 {
 	color: white;
 	text-decoration: none;
     letter-spacing: .6px;
-	cursor: pointer;
 	white-space: nowrap;
 }
 
@@ -161,6 +161,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #about {
 	height: 95%;
+	background-color: RGB(53,54,58);
+	padding: 10px;
 }
 
 .aboutimages {
@@ -184,12 +186,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #about p {
 	margin: 20px;
+	margin-bottom: 0px;
 	color: white;
+	background-color: RGB(53,54,58);
 }
 
 #projects {
 	height: 95%;
 	width: 100%;
+	background-color: RGB(53,54,58);
 }
 
 .carousel {
@@ -200,6 +205,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0px;
     text-align: center;
     overflow: hidden;
+	background-color: RGB(53,54,58);
 }
 
 .projectsholder {
@@ -222,6 +228,10 @@ h1, h2, h3, h4, h5, h6 {
 	height: 400px;
 	flex-basis: 0;
 	flex-grow: 1;
+}
+
+.projectlink:hover {
+	
 }
 
 #projectlink1:target ~ .projectsholder {
@@ -260,24 +270,22 @@ h1, h2, h3, h4, h5, h6 {
 #contact {
 	background-color: #333333;
 	bottom: 0;
-//	position: sticky;
+	position: sticky;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	z-index: -1;
+	z-index: -999;
 }
 
 #contact > div {
 	padding: 20px;
 	border: 2px solid #03bafc;
 	margin: 20px;
-    position: static;
 	outline: none;
 	font-family: sans-serif;
     font-size: 16px;
 	color: white;
     letter-spacing: .6px;
-	cursor: pointer;
 	white-space: wrap;
 	overflow: hidden;
 	flex-grow: 1;
