@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #splash {
 	position: absolute;
+	z-index: 3;
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
@@ -160,6 +161,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #about {
+	position: relative;
+	z-index: 2;
 	height: 95%;
 	background-color: RGB(53,54,58);
 	padding: 10px;
@@ -192,9 +195,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #projects {
+	position: relative;
+	z-index: 1;
 	height: 95%;
 	width: 100%;
 	background-color: RGB(53,54,58);
+	counter-reset: projects;
 }
 
 .carousel {
@@ -203,7 +209,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
-    text-align: center;
     overflow: hidden;
 	background-color: RGB(53,54,58);
 }
@@ -220,18 +225,47 @@ h1, h2, h3, h4, h5, h6 {
     transition: left 2s;
 }
 
-.projectlink {
+.project {
 	float: left;
     margin: 10px;
     padding: 0px;
     position: relative;
 	height: 400px;
+	width: 933px;
 	flex-basis: 0;
 	flex-grow: 1;
 }
 
-.projectlink:hover {
-	
+.projectlink {
+    margin: 10px;
+    padding: 0px;
+    position: absolute;
+	width: 933px;
+	height: 20%;
+	background-color: #03bafc;
+	opacity: 0;
+	transition: opacity 1s;
+	z-index: 99;
+}
+
+.projectlink::after {
+	counter-increment: projects;
+	content: 'Project: ' counter(projects);
+}
+
+.project:hover .projectlink {
+	opacity: 1;
+}
+
+.projectimage {
+	float: left;
+    margin: 10px;
+    padding: 0px;
+    position: relative;
+	height: 400px;
+	width: 933px;
+	flex-basis: 0;
+	flex-grow: 1;
 }
 
 #projectlink1:target ~ .projectsholder {
@@ -255,6 +289,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .carouselbuttons {
+	text-align: center;
     position: relative;
     top: -20px;
 }
@@ -274,7 +309,7 @@ h1, h2, h3, h4, h5, h6 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	z-index: -999;
+	z-index: 0;
 }
 
 #contact > div {
@@ -323,22 +358,23 @@ h1, h2, h3, h4, h5, h6 {
 	flex-basis: 10%;
 }
 
-.phone a img, .email a img {
+.phone img, .email img {
 	width: 100px;
-	transition: width 1s;
+	transition: width 1s, transform 1s;
 }
 
-.phone a:hover img, .email a:hover img {
-	width: 120px;
+.phone:hover img, .email:hover img {
+	width: 140px;
+	transform: rotate(-360deg);
 }
 
-.github a img, .linkedin a img {
+.github img, .linkedin img {
 	width: 100px;
 	margin: auto;
 	transition: width 1s;
 }
 
-.github a:hover img, .linkedin a:hover img {
+.github:hover img, .linkedin:hover img {
 	width: 120px;
 }
 
