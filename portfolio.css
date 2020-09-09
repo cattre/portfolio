@@ -37,21 +37,30 @@ h1, h2, h3, h4, h5, h6 {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	z-index: -1;
 }
 
-//#overlay {
+#overlay {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	animation: fade 10s;
-	background-color: RGBA(53,54,58,1);
+	animation: fadeout 4s;
+	opacity: 0;
+	background-color: RGB(53,54,58);
+	z-index: 1;
 }
 
-@keyframes fade {
-	0% {background-color: RGBA(53,54,58,1);}
-	60% {background-color: RGBA(53,54,58,0);}	
-	100% {background-color: RGBA(53,54,58,1);}
+@keyframes fadeout {
+	from {opacity: 1;}
+	to {opacity: 0;}
 }
+
+@keyframes fadein {
+	0% {opacity: 0;}
+	60% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
 
 #intro {
 	background-color: RGBA(53,54,58,1);
@@ -60,9 +69,11 @@ h1, h2, h3, h4, h5, h6 {
 	grid-template-columns: 1fr 4fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-      ". a ."
-      ". b ."
-      ". c .";
+		". a ."
+		". b ."
+		". c .";
+	z-index: 999;
+	animation: fadein 10s;
 }
 
 #title {
@@ -88,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
-q {
+.quote {
 	color: #03bafc;
 	font-size: 25px;
 	font-style: italic;
@@ -97,6 +108,11 @@ q {
 	grid-area: c;
 	text-align: center;
 	padding-bottom: 10px;
+}
+
+.author {
+	color: white;
+	font-size: 20px;
 }
 
 #menubar {
@@ -168,10 +184,11 @@ q {
     height: 400px;
     clear: both;
     position: relative;
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -o-transition: left 2s;
-    transition: left 2s;
+//    -webkit-transition: left 2s;
+//    -moz-transition: left 2s;
+//    -o-transition: left 2s;
+//    transition: left 2s;
+//	animation: slide 60s;
 }
 
 .carouselimage
@@ -182,6 +199,13 @@ q {
     position: relative;
 	height: 400px;
 }
+
+@keyframes slide {
+	0% {left: 0px;}
+	50% {left: -3200px;}
+	100% {left: 0px;}
+}
+
 
 #carouselimage1:target ~ .imageholder
 {
@@ -321,10 +345,14 @@ q {
 
 .phone, .email {
 	min-width: 400px;
+	flex-grow: 2;
+	flex-basis: 20%;
 }
 
 .github, .linkedin {
 	min-width: 400px;
+	flex-grow: 1;
+	flex-basis: 10%;
 }
 
 .phone a img, .email a img {
@@ -337,13 +365,13 @@ q {
 }
 
 .github a img, .linkedin a img {
-	width: 60px;
+	width: 100px;
 	margin: auto;
 	transition: width 1s;
 }
 
 .github a:hover img, .linkedin a:hover img {
-	width: 80px;
+	width: 120px;
 }
 
 .title {
