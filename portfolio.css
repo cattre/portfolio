@@ -329,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
     color: inherit;
 }
 
-#contact a:hover {
+#contact > div:hover {
 	animation: hover 2s infinite;
 }
 
