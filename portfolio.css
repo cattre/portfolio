@@ -123,6 +123,8 @@ h1, h2, h3, h4, h5, h6 {
 	align-items: center;
 	padding-right: 30%;
 	padding-left: 30%;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	position: sticky;
 	top: 0;
 	z-index: 999;
@@ -164,23 +166,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .aboutimages {
-	width: auto;
-	height: 400px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+}
+
+.aboutimages div {
+	margin: 0px;
+	padding: 10px;
+	flex-grow: 1;
+	flex-basis: 0;
+	max-height: 25vw;
 	overflow: hidden;
 }
 
-.aboutimages {
-	max-width: 100%;
-	flex-shrink: 1;
+.aboutimages div img {
+	height: 100%;
 }
 
 #about p {
 	margin: 20px;
 	color: white;
+}
+
+#projects {
+	height: 95%;
+	width: 100%;
 }
 
 .carousel {
@@ -195,7 +206,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .projectsholder
 {
-    width: 4800px;
+    display: flex;
+	width: 3200px;
     height: 400px;
     clear: both;
     position: relative;
@@ -207,8 +219,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .projectlink
 {
-    float: left;
-    margin: 0px;
+	float: left;
+    margin: 10px;
     padding: 0px;
     position: relative;
 	height: 400px;
@@ -252,46 +264,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 10px;
     border-radius: 5px;
     background-color: #03bafc;
-}
-
-#projects {
-	height: 95%;
-	width: 100%;
-	counter-reset: projects;
-}
-
-.projectrow {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	margin: 20px;
-}
-
-.projectrow:nth-child(even) {
-	flex-direction: row-reverse;
-}
-
-.project {
-	border: 2px solid #03bafc;
-	margin: 20px;
-	min-width: 400px;
-	min-height: 300px;
-	text-align: center;
-}
-
-.project::after {
-	counter-increment: projects;
-	content: 'Project ' counter(projects);
-}
-
-.project:nth-child(even) {
-	flex-grow: 1;
-	flex-basis: 50%;
-}
-
-.project:nth-child(odd) {
-	flex-basis: 25%;
-	flex-grow: 1;
 }
 
 #contact {
