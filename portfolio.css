@@ -123,6 +123,8 @@ h1, h2, h3, h4, h5, h6 {
 	align-items: center;
 	padding-right: 30%;
 	padding-left: 30%;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	position: sticky;
 	top: 0;
 	z-index: 999;
@@ -163,9 +165,33 @@ h1, h2, h3, h4, h5, h6 {
 	height: 95%;
 }
 
+.aboutimages {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.aboutimages div {
+	margin: 0px;
+	padding: 10px;
+	flex-grow: 1;
+	flex-basis: 0;
+	max-height: 25vw;
+	overflow: hidden;
+}
+
+.aboutimages div img {
+	height: 100%;
+}
+
 #about p {
 	margin: 20px;
 	color: white;
+}
+
+#projects {
+	height: 95%;
+	width: 100%;
 }
 
 .carousel {
@@ -178,9 +204,9 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
 
-.imageholder
-{
-    width: 4800px;
+.projectsholder {
+    display: flex;
+	width: 3200px;
     height: 400px;
     clear: both;
     position: relative;
@@ -190,103 +216,45 @@ h1, h2, h3, h4, h5, h6 {
     transition: left 2s;
 }
 
-.carouselimage
-{
-    float: left;
-    margin: 0px;
+.projectlink {
+	float: left;
+    margin: 10px;
     padding: 0px;
     position: relative;
 	height: 400px;
 }
 
-#carouselimage1:target ~ .imageholder
-{
+#projectlink1:target ~ .projectsholder {
     left: 0px;
 }
 
-#carouselimage2:target ~ .imageholder
-{
+#projectlink2:target ~ .projectsholder {
     left: -800px;
 }
 
-#carouselimage3:target ~ .imageholder
-{
+#projectlink3:target ~ .projectsholder {
     left: -1600px;
 }
 
-#carouselimage4:target ~ .imageholder
-{
+#projectlink4:target ~ .projectsholder {
     left: -2400px;
 }
 
-#carouselimage5:target ~ .imageholder
-{
+#projectlink5:target ~ .projectsholder {
     left: -3200px;
 }
 
-#carouselimage6:target ~ .imageholder
-{
-    left: -4000px;
-}
-
-#carouselimage7:target ~ .imageholder
-{
-    left: -4800px;
-}
-
-.carouselbuttons
-{
+.carouselbuttons {
     position: relative;
     top: -20px;
 }
 
-.carouselaction
-{
+.carouselaction {
     display: inline-block;
     height: 10px;
     width: 10px;
     border-radius: 5px;
-    background-color: brown;
-}
-
-#projects {
-	height: 95%;
-	width: 100%;
-	counter-reset: projects;
-}
-
-.projectrow {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	margin: 20px;
-}
-
-.projectrow:nth-child(even) {
-	flex-direction: row-reverse;
-}
-
-.project {
-	border: 2px solid #03bafc;
-	margin: 20px;
-	min-width: 400px;
-	min-height: 300px;
-	text-align: center;
-}
-
-.project::after {
-	counter-increment: projects;
-	content: 'Project ' counter(projects);
-}
-
-.project:nth-child(even) {
-	flex-grow: 1;
-	flex-basis: 50%;
-}
-
-.project:nth-child(odd) {
-	flex-basis: 25%;
-	flex-grow: 1;
+    background-color: #03bafc;
 }
 
 #contact {
