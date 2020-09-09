@@ -184,11 +184,10 @@ h1, h2, h3, h4, h5, h6 {
     height: 400px;
     clear: both;
     position: relative;
-//    -webkit-transition: left 2s;
-//    -moz-transition: left 2s;
-//    -o-transition: left 2s;
-//    transition: left 2s;
-//	animation: slide 60s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
 }
 
 .carouselimage
@@ -199,13 +198,6 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 	height: 400px;
 }
-
-@keyframes slide {
-	0% {left: 0px;}
-	50% {left: -3200px;}
-	100% {left: 0px;}
-}
-
 
 #carouselimage1:target ~ .imageholder
 {
