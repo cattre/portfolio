@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #splash {
 	position: absolute;
-	z-index: 3;
+	z-index: 4;
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
@@ -64,8 +64,9 @@ h1, h2, h3, h4, h5, h6 {
 	100% {opacity: 1;}
 }
 
-
 #intro {
+	position: relative;
+	z-index: 3;
 	background-color: RGBA(53,54,58,1);
 	height: 95vh;
 	display: grid;
@@ -133,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 999;
 }
 
-#menubar a{
+#menubar a {
     display: block;
     font-size: 16px;
     padding: 14px;
@@ -231,26 +232,35 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0px;
     position: relative;
 	height: 400px;
-	width: 933px;
 	flex-basis: 0;
 	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .projectlink {
-    margin: 10px;
-    padding: 0px;
     position: absolute;
-	width: 933px;
-	height: 20%;
+	z-index: 99;
+	width: 200px;
+	margin: auto;
+	outline: none;
 	background-color: #03bafc;
 	opacity: 0;
 	transition: opacity 1s;
-	z-index: 99;
+    font-size: 16px;
+	text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+	color: white;
+	text-decoration: none;
+    letter-spacing: .6px;
+	white-space: nowrap;
 }
 
 .projectlink::after {
 	counter-increment: projects;
-	content: 'Project: ' counter(projects);
+	content: ' Project: ' counter(projects);
 }
 
 .project:hover .projectlink {
