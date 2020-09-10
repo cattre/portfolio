@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 0px;
 	margin-left: 20px;
 	margin-right: 20px;
-	color: white;
+	color: #FFFFFF;
 	background-color: RGB(53,54,58);
 }
 
@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #subtitle {
-	color: white;
+	color: #FFFFFF;
 	font-size: 25px;
 	margin-left: auto;
 	margin-right: auto;
@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .author {
-	color: white;
+	color: #FFFFFF;
 	font-size: 20px;
 }
 
@@ -152,19 +152,19 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
-	color: white;
+	color: #FFFFFF;
 	text-decoration: none;
     letter-spacing: .6px;
 	white-space: nowrap;
 }
 
 @keyframes hover {
-	0% {color: white;
-		border-color: white;}
+	0% {color: #FFFFFF;
+		border-color: #FFFFFF;}
 	50% {color: #03bafc;
 		border-color: #03bafc;}
-	100% {color: white;
-		border-color: white;}
+	100% {color: #FFFFFF;
+		border-color: #FFFFFF;}
 }
 
 #menubar a:hover {
@@ -292,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #about p {
 	margin: 20px;
-	color: white;
+	color: #FFFFFF;
 	background-color: RGB(53,54,58);
 }
 
@@ -362,7 +362,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-	color: white;
+	color: #FFFFFF;
     letter-spacing: .6px;
 }
 
@@ -443,7 +443,7 @@ h1, h2, h3, h4, h5, h6 {
 	outline: none;
 	font-family: sans-serif;
     font-size: 16px;
-	color: white;
+	color: #FFFFFF;
     letter-spacing: .6px;
 	white-space: wrap;
 	overflow: hidden;
