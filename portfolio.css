@@ -35,7 +35,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #splash video {
 	min-height: 95%;
-	width: 100%;
+	min-width: 100vw;
+	width: auto;
 	height: auto;
 	position: absolute;
 	top: 50%;
@@ -171,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .aboutimages {
     display: flex;
-    height: 400px;
+    height: 24.75vw;
     clear: both;
     position: relative;
 }
@@ -239,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px;
     padding: 0px;
     position: relative;
-	width: 33vw;
+	width: 32vw;
 	flex-basis: 0;
 	flex-grow: 1;
 }
@@ -284,6 +285,7 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 1;
 	height: 95%;
 	width: 100%;
+	margin-top: 5vw;
 	background-color: RGB(53,54,58);
 	counter-reset: projects;
 }
@@ -300,8 +302,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .projectsholder {
     display: flex;
-	width: 3200px;
-    height: 400px;
+	width: auto;
+    height: 25vw;
     clear: both;
     position: relative;
     -webkit-transition: left 2s;
@@ -315,7 +317,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px;
     padding: 0px;
     position: relative;
-	height: 400px;
+	height: 25vw;
 	flex-basis: 0;
 	flex-grow: 1;
 	display: flex;
@@ -329,9 +331,10 @@ h1, h2, h3, h4, h5, h6 {
 	display: flex;
 	justify-content: center;
 	align-items: center;	
-	width: 400px;
-	height: 300px;
+	width: auto;
+	height: auto;
 	margin: auto;
+	padding: 10px;
 	outline: none;
 	background-color: #03bafc;
 	opacity: 0;
@@ -340,7 +343,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .linktext {
-    font-size: 40px;
+    font-size: 3vw;
 	text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -362,8 +365,8 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px;
     padding: 0px;
     position: relative;
-	height: 400px;
-	width: 933px;
+	height: 25vw;
+	width: auto;
 	flex-basis: 0;
 	flex-grow: 1;
 }
