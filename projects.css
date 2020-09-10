@@ -14,7 +14,7 @@ body {
 	color: white;
 }
 
-header {
+.heading {
 	display: flex;
 	justify-content: center;
 	align-items: center;
