@@ -163,7 +163,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #about {
-	position: relative;
 	z-index: 2;
 	height: 95%;
 	background-color: RGB(53,54,58);
@@ -171,22 +170,106 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .aboutimages {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    height: 400px;
+    clear: both;
+    position: relative;
 }
 
 .aboutimages div {
-	margin: 0px;
-	padding: 10px;
-	flex-grow: 1;
+	float: left;
+	margin: auto;
+    padding: 0px;
+    position: absolute;
 	flex-basis: 0;
-	max-height: 25vw;
-	overflow: hidden;
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+}
+
+.aboutimages div:nth-child(1) {
+	animation: fade 15s infinite;
+	left: 0px;
+}
+
+.aboutimages div:nth-child(2) {
+	animation: fade 15s 2s infinite;
+	left: 32vw;
+}
+
+.aboutimages div:nth-child(3) {
+	animation: fade 15s 4s infinite;
+	left: 64vw;
+}
+
+.aboutimages div:nth-child(4) {
+	animation: fade 15s 5s infinite;
+	left: 0vw;
+}
+
+.aboutimages div:nth-child(5) {
+	animation: fade 15s 7s infinite;
+	left: 32vw;
+}
+
+.aboutimages div:nth-child(6) {
+	animation: fade 15s 9s infinite;
+	left: 64vw;
+}
+
+.aboutimages div:nth-child(7) {
+	animation: fade 15s 10s infinite;
+	left: 0vw;
+}
+
+.aboutimages div:nth-child(8) {
+	animation: fade 15s 12s infinite;
+	left: 32vw;
+}
+
+.aboutimages div:nth-child(9) {
+	animation: fade 15s 14s infinite;
+	left: 64vw;
 }
 
 .aboutimages div img {
-	height: 100%;
+	float: left;
+    margin: 10px;
+    padding: 0px;
+    position: relative;
+	width: 33vw;
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+@keyframes fade {
+	0% {opacity: 0;}
+	10% {opacity: 0;}
+	20% {opacity: 0;}
+	30% {opacity: 0;}
+	40% {opacity: 1;}
+	50% {opacity: 1;}
+	60% {opacity: 1;}
+	70% {opacity: 0;}
+	80% {opacity: 0;}
+	90% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+@keyframes move {
+	0% {left 0vw;}
+	10% {left 0vw;}
+	20% {left 0vw;}
+	30% {left 32vw;}
+	40% {left 32vw;}
+	50% {left 32vw;}
+	60% {left 64vw;}
+	70% {left 64vw;}
+	80% {left 64vw;}
+	90% {left 32vw;}
+	100% {left 32vw;}
 }
 
 #about p {
