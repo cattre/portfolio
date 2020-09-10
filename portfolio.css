@@ -17,7 +17,18 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
-	text-transform: uppercase;
+}
+
+.sectiontitle {
+	margin-top: 5vh;
+	margin: 20px;
+	color: white;
+	width: 100vw;
+}
+
+.sectiontitle h1 {
+	padding: 10px;
+	text-decoration: underline #03bafc;
 }
 
 #landing {
@@ -414,7 +425,7 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 0;
 }
 
-#contact > div {
+.phone, .email, .github, .linkedin {
 	padding: 20px;
 	border: 2px solid #03bafc;
 	margin: 20px;
@@ -434,7 +445,7 @@ h1, h2, h3, h4, h5, h6 {
     color: inherit;
 }
 
-#contact > div:hover {
+.phone:hover, .email:hover, .github:hover, .linkedin:hover {
 	animation: hover 2s infinite;
 }
 
