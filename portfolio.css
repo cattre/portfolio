@@ -24,11 +24,9 @@ h1, h2, h3, h4, h5, h6 {
 	margin-left: 20px;
 	margin-right: 20px;
 	color: white;
-	width: 100vw;
 }
 
 .sectiontitle h1 {
-	padding: 10px;
 	text-decoration: underline #03bafc;
 }
 
@@ -38,7 +36,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #splash {
 	background-color: RGB(53,54,58);
-	position: absolute;
 	z-index: 4;
 	height: 100%;
 	width: 100%;
@@ -47,8 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #splash video {
 	min-height: 95%;
-	min-width: 100vw;
-	width: auto;
+	width: 100vw;
 	height: auto;
 	position: absolute;
 	top: 50%;
@@ -58,7 +54,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #overlay {
-	position: absolute;
 	height: 100%;
 	width: 100%;
 	animation: fadeout 4s;
@@ -112,7 +107,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 25px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 0;
 	grid-area: b;
 	text-align: center;
 }
@@ -179,20 +173,19 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 2;
 	height: 95%;
 	background-color: RGB(53,54,58);
-	padding: 10px;
 }
 
 .aboutimages {
     display: flex;
     height: 24.75vw;
+	width: auto;
     clear: both;
     position: relative;
+	padding: 20px;
+	margin: 20px;
 }
 
 .aboutimages div {
-	float: left;
-	margin: auto;
-    padding: 0px;
     position: absolute;
 	flex-basis: 0;
 	flex-grow: 1;
@@ -248,9 +241,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .aboutimages div img {
-	float: left;
-    margin: 10px;
-    padding: 0px;
     position: relative;
 	width: 32vw;
 	flex-basis: 0;
@@ -306,7 +296,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #projects {
-	padding: 10px;
 	position: relative;
 	z-index: 1;
 	height: 95%;
@@ -431,13 +420,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #contact {
-	padding: 10px;
 	background-color: #333333;
 	bottom: 0;
+	z-index: 0;
+}
+
+.contactbuttons {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	z-index: 0;
 }
 
 .phone, .email, .github, .linkedin {
