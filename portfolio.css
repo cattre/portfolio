@@ -38,6 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #splash {
+	position: absolute;
 	background-color: RGB(53,54,58);
 	height: 100%;
 	width: 100%;
@@ -56,6 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #overlay {
+	position: absolute;
 	height: 100%;
 	width: 100%;
 	animation: fadeout 4s;
