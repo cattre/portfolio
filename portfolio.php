@@ -3,33 +3,21 @@
 	<head>
 		<title>Richard Catterill - Portfolio</title>
 		<link rel='icon' type='image/x-icon' href='media/favicon.ico'/>
-		<link href='https://fonts.googleapis.com/css?family=Lora:400,700%7CMontserrat:300' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&family=Rock+Salt&display=swap' rel='stylesheet'>
 		<link rel='stylesheet' type= 'text/css' href='normalize.css'>
 		<link rel='stylesheet' type= 'text/css' href='portfolio.css'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
 		<meta charset='UTF-8'>
 	</head>
 	<body>
-		<div id='splash'>
-			<div id='overlay'>
-			</div>
-			<video autoplay muted>
-				<source src='media/splash.mp4'>
-			</video>
-		</div>
-		<div id='intro'>
+		<header id='intro'>
 			<div id='title'>
 				Richard Catterill
 			</div>
 			<div id='subtitle'>
 				Software Developer
 			</div>
-			<div class='quote'>
-				<p>
-					"There's an ocean of problems out there to solve"<br><span class='author'>- Richard Catterill, circa 2020</span>
-				</p>
-			</div>
-		</div>
+		</header>
 		<div id='menubar'>
 			<a href='#projects'>
 				Projects
@@ -41,66 +29,39 @@
 				Contact
 			</a>
 		</div>
+        <div class='contact'>
+            <a href='tel:07879646110'>
+                <img src='media/phone.png' alt='Phone icon'>
+            </a>
+            <a href='mailto:richardcatterill@outlook.com'>
+                <img src='media/sendmail.png' alt='Email icon'>
+            </a>
+            <a class='link' target='_blank' href='https://www.linkedin.com/in/richardcatterill'>
+                <img src='media/linkedin.png' alt='LinkedIn logo'>
+            </a>
+        </div>
 		<section id='projects'>
 			<div class='sectiontitle'>
-				<h1>Some of my recent projects.</h1>
+				<h1>Projects</h1>
 			</div>
-			<div class='carousel'>
-				<div id='projectlink1'></div>
-				<div id='projectlink2'></div>
-				<div id='projectlink3'></div>
-				<div id='projectlink4'></div>
-				<div id='projectlink5'></div>
-				<div class='projectsholder'>
-					<div class='project'>
-						<a class='projectlink' href='projects.html' target='_blank'>
-							<div class='linktext'>
-								Launch<br>
-							</div>
-						</a>
-						<img class='projectimage' src='https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png' alt='Project image'>
-					</div>
-					<div class='project'>
-						<a class='projectlink' href='projects.html' target='_blank'>
-							<div class='linktext'>
-								Launch<br>
-							</div>
-						</a>
-						<img class='projectimage' src='https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png' alt='Project image'>
-					</div>
-					<div class='project'>
-						<a class='projectlink' href='projects.html' target='_blank'>
-							<div class='linktext'>
-								Launch<br>
-							</div>
-						</a>
-						<img class='projectimage' src='https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png' alt='Project image'>
-					</div>
-					<div class='project'>
-						<a class='projectlink' href='projects.html' target='_blank'>
-							<div class='linktext'>
-								Launch<br>
-							</div>
-						</a>
-						<img class='projectimage' src='https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png' alt='Project image'>
-					</div>
-					<div class='project'>
-						<a class='projectlink' href='projects.html' target='_blank'>
-							<div class='linktext'>
-								Launch<br>
-							</div>
-						</a>
-						<img class='projectimage' src='https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png' alt='Project image'>
-					</div>
-				</div>
-				<div class='carouselbuttons'>
-					<a class='carouselaction' href='#projectlink1'></a>
-					<a class='carouselaction' href='#projectlink2'></a>
-					<a class='carouselaction' href='#projectlink3'></a>
-					<a class='carouselaction' href='#projectlink4'></a>
-					<a class='carouselaction' href='#projectlink5'></a>
-				</div>
-			</div>
+            <div class='projectContainer'>
+
+            </div>
+            <div class='github'>
+                <a class='link' target='_blank' href='https://github.com/cattre'>
+                    <div class='text'>
+                        <div class='title'>
+                            GitHub
+                        </div>
+                        <div class='value'>
+                            github.com/cattre
+                        </div>
+                    </div>
+                    <div class='image'>
+                        <img src='media/github.png' alt='GitHub logo'>
+                    </div>
+                </a>
+            </div>
 		</section>
 		<section id='about'>
 			<div class='sectiontitle'>
@@ -183,21 +144,7 @@
 						</div>
 					</a>
 				</div>
-				<div class='github'>
-					<a class='link' target='_blank' href='https://github.com/cattre'>
-						<div class='text'>
-							<div class='title'>
-								GitHub
-							</div>
-							<div class='value'>
-								github.com/cattre
-							</div>
-						</div>
-						<div class='image'>
-							<img src='media/github.png' alt='GitHub logo'>
-						</div>
-					</a>
-				</div>
+
 				<div class='linkedin'>
 					<a class='link' target='_blank' href='https://www.linkedin.com/in/richardcatterill'>
 						<div class='text'>
