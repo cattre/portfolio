@@ -29,9 +29,9 @@ let intro = document.querySelector('.intro')
 let about = document.querySelector('.about')
 let portfolio = document.querySelector('.portfolio')
 
-let whoButton = document.querySelector('.who')
-let whatButton = document.querySelector('.what')
-let backButton = document.querySelector('.back')
+let whoButton = document.querySelectorAll('.who')
+let whatButton = document.querySelectorAll('.what')
+let backButton = document.querySelectorAll('.back')
 
 introButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -41,24 +41,29 @@ introButtons.forEach(button => {
     })
 })
 
-whoButton.addEventListener('click', () => {
-    intro.style.display = 'none'
-    about.style.display = 'flex'
-    portfolio.style.display = 'none'
+whoButton.forEach(button => {
+    button.addEventListener('click', () => {
+        intro.style.display = 'none'
+        about.style.display = 'flex'
+        portfolio.style.display = 'none'
+    })
 })
 
-whatButton.addEventListener('click', () => {
-    intro.style.display = 'none'
-    about.style.display = 'none'
-    portfolio.style.display = 'flex'
+whatButton.forEach(button => {
+    button.addEventListener('click', () => {
+        intro.style.display = 'none'
+        about.style.display = 'none'
+        portfolio.style.display = 'flex'
+    })
 })
 
-backButton.addEventListener('click', () => {
-    intro.style.display = 'flex'
-    about.style.display = 'none'
-    portfolio.style.display = 'none'
+backButton.forEach(button => {
+    button.addEventListener('click', () => {
+        intro.style.display = 'flex'
+        about.style.display = 'none'
+        portfolio.style.display = 'none'
+    })
 })
-
 
 
 let keys = ''

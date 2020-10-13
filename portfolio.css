@@ -13,6 +13,10 @@ body {
 	background-color: #35363A;
 }
 
+.about {
+	top: 52px;
+}
+
 /*Fonts*/
 
 /*https://www.dafont.com/lemon-tuesday.font*/
@@ -53,6 +57,8 @@ body {
 }
 
 .menu {
+	position: fixed;
+	top: 0;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -100,6 +106,10 @@ body {
 
 .fullheight {
 	height: 100%
+}
+
+.fullwidth {
+	width: 100%
 }
 
 /*Assets*/
@@ -174,13 +184,40 @@ button {
 	font-size: 50px;
 }
 
-.image {
+.profileImage {
 	width: 100%;
 	height: 100%;
 	background-image: url('media/Profile photo (B&W).png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+}
+
+.projectImage1 {
+	width: 33%;
+	position: relative;
+	top: 15%;
+	left: 5%;
+	z-index: -1;
+	transform: rotate(-5deg);
+}
+
+.projectImage2 {
+	width: 33%;
+	position: relative;
+	top: 10%;
+	left: 10%;
+	z-index: -1;
+	transform: rotate(-5deg);
+}
+
+.projectImage3 {
+	width: 33%;
+	position: relative;
+	top: 20%;
+	left: 15%;
+	z-index: -1;
+	transform: rotate(-5deg);
 }
 
 /*Animation*/
