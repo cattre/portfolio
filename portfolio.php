@@ -23,7 +23,7 @@ require 'code.php';
                 <span class='title'><span class='name'></span><span class='cursor'>_</span></span>
             </section>
             <section class='horiz fullheight'>
-                <button class='who fade button1 horiz fullheight'>
+                <button class='who introButtons button1 horiz fullheight'>
                     <div class='vert'>
                         <span>
                             who is this guy?
@@ -33,7 +33,7 @@ require 'code.php';
                         </span>
                     </div>
                 </button>
-                <button class='what fade button2 horiz fullheight'>
+                <button class='what introButtons button2 horiz fullheight'>
                     <div class='vert'>
                             <span>
                                 what can he do?

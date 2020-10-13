@@ -1,14 +1,14 @@
 let nameSpan = document.querySelector('.name')
 let name = ['R', 'i', 'c', 'h', 'a', 'r', 'd', ' ', 'C', 'a', 't', 't', 'e', 'r', 'i', 'l', 'l']
 let index = 0
-let fadeButtons = document.querySelectorAll('.fade')
+let introButtons = document.querySelectorAll('.introButtons')
 
 window.addEventListener('load', () => {
     setTimeout(() => {
         typeName()
     }, 500)
-    fadeButtons.forEach(button => {
-        button.style.animation = 'fadein 1s forwards ease-in 2200ms'
+    introButtons.forEach(button => {
+        button.classList.add('fade')
     })
 })
 
@@ -32,6 +32,14 @@ let portfolio = document.querySelector('.portfolio')
 let whoButton = document.querySelector('.who')
 let whatButton = document.querySelector('.what')
 let backButton = document.querySelector('.back')
+
+introButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        introButtons.forEach(button => {
+            button.classList.remove('fade')
+        })
+    })
+})
 
 whoButton.addEventListener('click', () => {
     intro.style.display = 'none'
