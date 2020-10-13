@@ -36,7 +36,7 @@ let backButton = document.querySelector('.back')
 introButtons.forEach(button => {
     button.addEventListener('click', () => {
         introButtons.forEach(button => {
-            button.classList.remove('fade')
+            button.classList.remove('fade', 'introButtons')
         })
     })
 })

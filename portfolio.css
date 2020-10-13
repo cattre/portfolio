@@ -109,8 +109,11 @@ body {
 }
 
 .fade {
-	opacity: 0;
 	animation: fadein 1s forwards ease-in 2200ms;
+}
+
+.introButtons {
+	opacity: 0;
 }
 
 .button1 {
