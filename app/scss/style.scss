@@ -1,0 +1,24 @@
+@import "vars";
+
+@import "colours";
+@import 'fonts';
+
+@import "core";
+@import "sections";
+@import "containers";
+@import "components";
+@import "animations";
+
+/*JS overrides*/
+
+.intro {
+	display: flex;
+}
+
+.about {
+	display: none;
+}
+
+.portfolio {
+	display: none;
+}
