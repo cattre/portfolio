@@ -1,37 +1,33 @@
 @font-face {
   font-family: Lemon Tuesday;
-  src: url('../../assets/Lemon Tuesday.otf');
+  src: url('../../assets/fonts/Lemon Tuesday.otf');
 }
 
 @font-face {
   font-family: Roboto Mono;
-  src: url('../../assets/RobotoMono-VariableFont_wght.ttf');
+  src: url('../../assets/fonts/RobotoMono-VariableFont_wght.ttf');
 }
 
 @font-face {
   font-family: Comfortaa;
-  src: url('../../assets/Comfortaa-VariableFont_wght.ttf');
+  src: url('../../assets/fonts/Comfortaa-VariableFont_wght.ttf');
 }
 
-.title {
-  font-size: 5em;
+.mainTitle {
+  font-size: 3em;
   font-family: 'Roboto Mono', sans-serif;
   text-align: center;
 }
 
-.subtitle1 {
+.sectionTitle {
   font-family: 'Lemon Tuesday', sans-serif;
-  font-size: 3em;
-}
-
-.subtitle2 {
-  font-family: 'Comfortaa', sans-serif;
   font-size: 3em;
 }
 
 .body {
   font-family: Comfortaa, sans-serif;
   text-align: justify;
-  margin: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
   color: $light;
 }

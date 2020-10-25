@@ -1,0 +1,63 @@
+.project {
+  padding-top: 105px;
+}
+
+.projectTitle {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+.projectIntro {
+  font-family: Comfortaa, sans-serif;
+  text-align: center;
+  color: $light;
+  grid-area: intro;
+}
+
+.projectSummary {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: 'blank intro tech';
+  margin: 10px;
+}
+
+.tech {
+  height: 50px;
+  grid-area: tech;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.techIcon {
+  height: 40px;
+}
+
+.projectImageContainer {
+  display: flex;
+  z-index: -1;
+}
+
+.projectImageWrapper {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.projectImage {
+  max-height: 100%;
+  max-width: 100%;
+  border: 5px solid $light;
+  border-radius: 5px;
+  object-fit: contain;
+  position: center;
+  &.image1 {
+    transform: rotate(-5deg);
+  }
+  &.image2 {
+    transform: rotate(0deg);
+  }
+  &.image3 {
+    transform: rotate(5deg);
+  }
+}

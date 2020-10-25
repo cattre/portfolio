@@ -3,7 +3,7 @@
     <head>
         <title>Richard Catterill - Software Developer</title>
         <script defer src='https://kit.fontawesome.com/d224d393cb.js' crossorigin='anonymous'></script>
-        <link rel='icon' type='image/x-icon' href='media/favicon.ico'/>
+        <link rel='icon' type='image/x-icon' href='assets/favicon.ico'/>
         <link href='https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&family=Rock+Salt&display=swap' rel='stylesheet'>
         <link rel='stylesheet' type= 'text/css' href='normalize.css'>
         <link rel='stylesheet' type= 'text/css' href='app/css/style.css'>
@@ -12,46 +12,46 @@
         <script defer src='portfolio.js'></script>
     </head>
     <body>
-        <header class='intro pg vert'>
-            <section class='horiz fullheight'>
-                <span class='title'><span class='name'></span><span class='cursor'>_</span></span>
+        <header class='intro vert fullHeight'>
+            <section class='horiz halfPage fullHeight fullWidth'>
+                <span class='mainTitle'><span class='name'></span><span class='cursor'>_</span></span>
             </section>
-            <section class='horiz fullheight'>
-                <button class='who introButtons button1 horiz fullheight'>
-                    <div class='vert'>
+            <section class='horiz fullHeight fullWidth halfPage'>
+                <button class='who vert introButton button1 halfHeight halfWidth'>
+                    <span class='vert'>
                         <span>
                             who is this guy?
                         </span>
                         <span>
                             <i class='fas fa-user-secret largeIcon'></i>
                         </span>
-                    </div>
+                    </span>
                 </button>
-                <button class='what introButtons button2 horiz fullheight'>
-                    <div class='vert'>
-                            <span>
-                                what can he do?
-                            </span>
-                            <span>
-                                <i class='fas fa-code largeIcon'></i>
-                            </span>
-                    </div>
+                <button class='what vert introButton button2 halfHeight halfWidth'>
+                    <span class='vert'>
+                        <span>
+                            what can he do?
+                        </span>
+                        <span>
+                            <i class='fas fa-code largeIcon'></i>
+                        </span>
+                    </span>
                 </button>
             </section>
         </header>
         <main>
-            <section class='about pg vert'>
+            <section class='about vert'>
                 <div class='menu'>
-                    <button class='back button1 light'>&#8592; back</button>
-                    <button class='what button2 primary'>what can he do? &#8594;</button>
+                    <button class='back navButton button1'>&#8592; back</button>
+                    <button class='what navButton button2'>what can he do? &#8594;</button>
                 </div>
-                <section class='horiz fullheight'>
-                    <div class='profileImage fullheight'>
+                <section class='horiz fullHeight'>
+                    <div class='profileImage'>
                     </div>
                 </section>
-                <section class='horiz fullheight'>
-                    <div class='vert fullwidth'>
-                        <span class='subtitle1 primary'>
+                <section class='horiz fullHeight'>
+                    <div class='vert fullWidth fullHeight'>
+                        <span class='sectionTitle primary'>
                             Work
                         </span>
                         <p class='body'>
@@ -61,8 +61,8 @@
                             I am still learning the ropes at the moment but should be available for my first real challenge in early 2021.
                         </p>
                     </div>
-                    <div class='vert fullwidth'>
-                        <span class='subtitle1 primary'>
+                    <div class='vert fullWidth fullHeight'>
+                        <span class='sectionTitle primary'>
                             Play
                         </span>
                         <p class='body'>
@@ -76,41 +76,58 @@
             </section>
             <section class='portfolio vert'>
                 <div class='menu'>
-                    <button class='back button1 light'>&#8592; back</button>
-                    <button class='who button2 primary'>who is this guy? &#8594;</button>
+                    <button class='back navButton button1'>&#8592; back</button>
+                    <button class='who navButton button2'>who is this<br>guy? &#8594;</button>
                 </div>
-                <article class='project pg vert'>
-                    <section class='horiz fullheight'>
-                        <div class='vert fullwidth'>
-                            <span class='subtitle2 secondary'>
-                                Project: Checkmark
-                            </span>
-                            <div class='body'>
-                                Decision quality assurance system for the Planing Inspectorate
+                <article class='project vert'>
+                    <section class='horiz halfPage fullHeight fullWidth'>
+                        <div class='vert fullHeight fullWidth'>
+                            <div class='vert halfHeight fullWidth'>
+                                <span class='projectTitle primary'>
+                                    Project: Checkmark
+                                </span>
+                                <span class='projectSummary fullWidth'>
+                                    <div class='projectSubtitle projectIntro'>
+                                        Decision quality assurance system for the Planning Inspectorate
+                                    </div>
+                                    <div class='tech'>
+                                        <img class='techIcon' src='https://www.php.net/images/logos/new-php-logo.svg' alt='PHP logo'>
+                                    </div>
+                                </span>
                             </div>
-                            <div class='projectImageContainer fullheight'>
-        <!--                        <img class='projectImage1' src='media/CM1.jpeg' alt='Project Image'>-->
-        <!--                        <img class='projectImage2' src='media/CM2.jpeg' alt='Project Image'>-->
-        <!--                        <img class='projectImage3' src='media/CM3.jpeg' alt='Project Image'>-->
+                            <div class='projectImageContainer halfHeight fullWidth'>
+                                <div class='projectImageWrapper'>
+                                    <img class='projectImage image1' src='assets/projectImages/CM1.png' alt=''>
+                                </div>
+                                <div class='projectImageWrapper'>
+                                    <img class='projectImage image2' src='assets/projectImages/CM2.png' alt=''>
+                                </div>
+                                <div class='projectImageWrapper'>
+                                    <img class='projectImage image3' src='assets/projectImages/CM3.png' alt=''>
+                                </div>
                             </div>
                         </div>
                     </section>
-                    <section class='horiz'>
-                        <div class='vert fullwidth'>
-                            <span class='subtitle1 primary'>
-                                The brief
+                    <section class='horiz halfPage fullHeight fullWidth'>
+                        <div class='vert halfHeight halfWidth'>
+                            <span class='vert'>
+                                <span class='sectionTitle primary'>
+                                    The brief
+                                </span>
+                                <span class='body'>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </span>
                             </span>
-                            <p class='body'>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
                         </div>
-                        <div class='vert fullwidth'>
-                            <span class='subtitle1 primary'>
-                                The execution
+                        <div class='vert halfHeight halfWidth'>
+                            <span class='vert'>
+                                <span class='sectionTitle primary'>
+                                    The execution
+                                </span>
+                                <span class='body'>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </span>
                             </span>
-                            <p class='body'>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
                         </div>
                     </section>
                 </article>

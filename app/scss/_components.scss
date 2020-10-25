@@ -1,4 +1,5 @@
 .menu {
+  background-color: $dark;
   position: fixed;
   top: 0;
   width: 100%;
@@ -15,7 +16,7 @@
   animation: fadein 1s forwards ease-in 2200ms;
 }
 
-.introButtons {
+.introButton {
   opacity: 0;
 }
 
@@ -40,7 +41,7 @@
 
 .button2:hover,
 .button2:focus {
-  background: #FFFFFF;
+  background: $light;
   color: $dark;
   border: none;
 }
@@ -55,67 +56,20 @@ button {
   outline: none;
   border: none;
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 1rem;
   margin: 0;
   text-decoration: none;
   font-size: 2rem;
   cursor: pointer;
   text-align: center;
   transition: background 250ms ease-in-out,
-  color 250ms ease-in-out,
+              color 250ms ease-in-out,
   transform 150ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-.logo {
-
-}
-
 .largeIcon {
   margin: 10px;
   font-size: 50px;
-}
-
-.profileImage {
-  width: 100%;
-  height: 100%;
-  background-image: url('../../media/Profile photo (B&W).png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.projectImageContainer {
-  display: block;
-  width: 75%;
-  overflow: hidden;
-  background-image: url('media/CM1.jpeg');
-}
-
-.projectImage1 {
-  width: 33%;
-  position: relative;
-  top: 15%;
-  left: 5%;
-  z-index: -1;
-  transform: rotate(-5deg);
-}
-
-.projectImage2 {
-  width: 33%;
-  position: relative;
-  top: 10%;
-  left: 10%;
-  z-index: -1;
-  transform: rotate(-5deg);
-}
-
-.projectImage3 {
-  width: 33%;
-  position: relative;
-  top: 20%;
-  left: 15%;
-  z-index: -1;
-  transform: rotate(-5deg);
 }

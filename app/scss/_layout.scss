@@ -1,0 +1,38 @@
+.halfPage {
+  height: 50%;
+}
+
+.vert {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.horiz {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fullHeight {
+  height: 100%;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.halfHeight {
+  min-height: 50%;
+}
+
+.halfWidth {
+  min-width: 50%;
+}

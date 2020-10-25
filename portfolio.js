@@ -1,7 +1,7 @@
 let nameSpan = document.querySelector('.name')
 let name = ['R', 'i', 'c', 'h', 'a', 'r', 'd', ' ', 'C', 'a', 't', 't', 'e', 'r', 'i', 'l', 'l']
 let index = 0
-let introButtons = document.querySelectorAll('.introButtons')
+let introButtons = document.querySelectorAll('.introButton')
 
 window.addEventListener('load', () => {
     setTimeout(() => {
@@ -36,7 +36,7 @@ let backButton = document.querySelectorAll('.back')
 introButtons.forEach(button => {
     button.addEventListener('click', () => {
         introButtons.forEach(button => {
-            button.classList.remove('fade', 'introButtons')
+            button.classList.remove('fade', 'introButton')
         })
     })
 })
