@@ -1,0 +1,50 @@
+{{#projects}}
+<article class='project vert'>
+    <section class='horiz halfPage fullHeight fullWidth'>
+        <div class='vert fullHeight fullWidth'>
+            <div class='vert halfHeight fullWidth'>
+                <span class='projectTitle primary'>
+                    Project: {{ name }}
+                </span>
+                <span class='projectSummary fullWidth'>
+                    <div class='projectSubtitle projectIntro'>
+                        {{ intro }}
+                    </div>
+                    <div class='tech'>
+                        <img class='techIcon' src='https://www.php.net/images/logos/new-php-logo.svg' alt='PHP logo'>
+                    </div>
+                </span>
+            </div>
+            <div class='projectImageContainer halfHeight fullWidth'>
+                {{#images}}
+                <div class='projectImageWrapper'>
+                    <img class='projectImage {{ image }}' src='{{ path }}' alt=''>
+                </div>
+                {{/images}}
+            </div>
+        </div>
+    </section>
+    <section class='horiz halfPage fullHeight fullWidth'>
+        <div class='vert halfHeight halfWidth'>
+            <span class='vert'>
+                <span class='sectionTitle primary'>
+                    The brief
+                </span>
+                <span class='body'>
+                    {{ brief }}
+                </span>
+            </span>
+        </div>
+        <div class='vert halfHeight halfWidth'>
+            <span class='vert'>
+                <span class='sectionTitle primary'>
+                    The execution
+                </span>
+                <span class='body'>
+                    {{ execution }}
+                </span>
+            </span>
+        </div>
+    </section>
+</article>
+{{/projects}}

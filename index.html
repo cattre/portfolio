@@ -9,7 +9,9 @@
         <link rel='stylesheet' type= 'text/css' href='app/css/style.css'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <meta charset='UTF-8'>
-        <script defer src='portfolio.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js'></script>
+        <script defer src='app/js/portfolio.js'></script>
+        <script defer src='app/js/projects.js'></script>
     </head>
     <body>
         <header class='intro vert fullHeight'>
@@ -79,58 +81,59 @@
                     <button class='back navButton button1'>&#8592; back</button>
                     <button class='who navButton button2'>who is this<br>guy? &#8594;</button>
                 </div>
-                <article class='project vert'>
-                    <section class='horiz halfPage fullHeight fullWidth'>
-                        <div class='vert fullHeight fullWidth'>
-                            <div class='vert halfHeight fullWidth'>
-                                <span class='projectTitle primary'>
-                                    Project: Checkmark
-                                </span>
-                                <span class='projectSummary fullWidth'>
-                                    <div class='projectSubtitle projectIntro'>
-                                        Decision quality assurance system for the Planning Inspectorate
-                                    </div>
-                                    <div class='tech'>
-                                        <img class='techIcon' src='https://www.php.net/images/logos/new-php-logo.svg' alt='PHP logo'>
-                                    </div>
-                                </span>
-                            </div>
-                            <div class='projectImageContainer halfHeight fullWidth'>
-                                <div class='projectImageWrapper'>
-                                    <img class='projectImage image1' src='assets/projectImages/CM1.png' alt=''>
-                                </div>
-                                <div class='projectImageWrapper'>
-                                    <img class='projectImage image2' src='assets/projectImages/CM2.png' alt=''>
-                                </div>
-                                <div class='projectImageWrapper'>
-                                    <img class='projectImage image3' src='assets/projectImages/CM3.png' alt=''>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class='horiz halfPage fullHeight fullWidth'>
-                        <div class='vert halfHeight halfWidth'>
-                            <span class='vert'>
-                                <span class='sectionTitle primary'>
-                                    The brief
-                                </span>
-                                <span class='body'>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </span>
-                            </span>
-                        </div>
-                        <div class='vert halfHeight halfWidth'>
-                            <span class='vert'>
-                                <span class='sectionTitle primary'>
-                                    The execution
-                                </span>
-                                <span class='body'>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </span>
-                            </span>
-                        </div>
-                    </section>
-                </article>
+                <div class='projectsContainer'></div>
+<!--                <article class='project vert'>-->
+<!--                    <section class='horiz halfPage fullHeight fullWidth'>-->
+<!--                        <div class='vert fullHeight fullWidth'>-->
+<!--                            <div class='vert halfHeight fullWidth'>-->
+<!--                                <span class='projectTitle primary'>-->
+<!--                                    Project: Checkmark-->
+<!--                                </span>-->
+<!--                                <span class='projectSummary fullWidth'>-->
+<!--                                    <div class='projectSubtitle projectIntro'>-->
+<!--                                        Decision quality assurance system for the Planning Inspectorate-->
+<!--                                    </div>-->
+<!--                                    <div class='tech'>-->
+<!--                                        <img class='techIcon' src='https://www.php.net/images/logos/new-php-logo.svg' alt='PHP logo'>-->
+<!--                                    </div>-->
+<!--                                </span>-->
+<!--                            </div>-->
+<!--                            <div class='projectImageContainer halfHeight fullWidth'>-->
+<!--                                <div class='projectImageWrapper'>-->
+<!--                                    <img class='projectImage image1' src='assets/projectImages/CM1.png' alt=''>-->
+<!--                                </div>-->
+<!--                                <div class='projectImageWrapper'>-->
+<!--                                    <img class='projectImage image2' src='assets/projectImages/CM2.png' alt=''>-->
+<!--                                </div>-->
+<!--                                <div class='projectImageWrapper'>-->
+<!--                                    <img class='projectImage image3' src='assets/projectImages/CM3.png' alt=''>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </section>-->
+<!--                    <section class='horiz halfPage fullHeight fullWidth'>-->
+<!--                        <div class='vert halfHeight halfWidth'>-->
+<!--                            <span class='vert'>-->
+<!--                                <span class='sectionTitle primary'>-->
+<!--                                    The brief-->
+<!--                                </span>-->
+<!--                                <span class='body'>-->
+<!--                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.-->
+<!--                                </span>-->
+<!--                            </span>-->
+<!--                        </div>-->
+<!--                        <div class='vert halfHeight halfWidth'>-->
+<!--                            <span class='vert'>-->
+<!--                                <span class='sectionTitle primary'>-->
+<!--                                    The execution-->
+<!--                                </span>-->
+<!--                                <span class='body'>-->
+<!--                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.-->
+<!--                                </span>-->
+<!--                            </span>-->
+<!--                        </div>-->
+<!--                    </section>-->
+<!--                </article>-->
             </section>
         </main>
 <!--        <img class='logo' src='--><?php //echo $php; ?><!--' alt='--><?php //echo $phpAlt; ?><!--'>-->
