@@ -2,12 +2,12 @@
     <article class='projectThumb vert'>
         <div class='vert fullHeight fullWidth'>
             <span class='thumbTitle'>{{ name }}</span>
-            <span class='thumbIntro'>{{ intro }}</span>
-            <span class='thumbTech'>
+            <div class='thumbTechContainer fullWidth'>
                 {{#tech}}
-
+                    <img class='thumbTechImage' src = '{{ . }}' alt=''>
                 {{/tech}}
-            </span>
+            </div>
+            <span class='thumbIntro'>{{ intro }}</span>
             <div class='thumbImageContainer'>
                 <img class='thumbImage' src = '{{ images.0.path }}' alt=''>
             </div>

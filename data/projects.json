@@ -3,7 +3,7 @@
     {
       "name": "Checkmark",
       "intro": "Decision quality assurance system for the Planning Inspectorate",
-      "tech": ["assets/logos/powerApps/png", "assets/logos/sharePoint/png", "assets/logos/powerAutomate/png"],
+      "tech": ["assets/logos/powerApps.png", "assets/logos/sharePoint.png", "assets/logos/powerAutomate.png"],
       "images": [
         {
           "image": "image1",
@@ -24,25 +24,94 @@
       "secondaryLink": "https://github.com/cattre"
     },
     {
-      "name": "Checkmark2",
-      "intro": "Decision quality assurance system for the Planning Inspectorate",
-      "tech": ["Power Apps", "SharePoint", "Power Automate"],
+      "name": "Beers collection",
+      "intro": "PHP MySQL collection app",
+      "tech": ["assets/logos/php.png", "assets/logos/mySQL.png", "assets/logos/html5.png", "assets/logos/css3.png"],
       "images": [
         {
           "image": "image1",
-          "path": "assets/projectImages/CM1.png"
+          "path": "assets/projectImages/beers1.png"
         },
         {
           "image": "image2",
-          "path": "assets/projectImages/CM2.png"
+          "path": "assets/projectImages/beers2.png"
         },
         {
           "image": "image3",
-          "path": "assets/projectImages/CM3.png"
+          "path": "assets/projectImages/beers3.png"
         }
       ],
-      "brief": "United all quality assurance functions across the Planning Inspectorate, providing users with a self-service system\nReduced admin overhead and process duration – saving around 500 weeks from overall case age in pilot phase alone\nIncreased scope of data captured and data quality (reduce likelihood of data errors)\n",
-      "execution": "Three apps built within Microsoft Power Apps – covering decision submission, decision review, and process administration\nIntegrated solution comprising 6 SharePoint lists/libraries and 19 Power Automate flows\nRow-based security on all items and linked documents\nManger-report relationship management\nOnline document access and editing\nIn-line comment history\nIntegrated help pages with accordion-style layout\nAround 2,000 app versions in total (1+ year in development)\n38-page solution design (plus embedded documents, including comprehensive business logic, architecture and workflow diagrams, and field mapping/data dictionary)\n",
+      "brief": "",
+      "execution": "",
+      "primaryLink": "",
+      "secondaryLink": ""
+    },
+    {
+      "name": "Blackjack",
+      "intro": "PHP multiplayer card game",
+      "tech": ["assets/logos/php.png", "assets/logos/html5.png", "assets/logos/css3.png"],
+      "images": [
+        {
+          "image": "image1",
+          "path": "assets/projectImages/blackjack1.png"
+        },
+        {
+          "image": "image2",
+          "path": "assets/projectImages/blackjack2.png"
+        },
+        {
+          "image": "image3",
+          "path": "assets/projectImages/blackjack3.png"
+        }
+      ],
+      "brief": "",
+      "execution": "",
+      "primaryLink": "",
+      "secondaryLink": ""
+    },
+    {
+      "name": "Thump a Trump",
+      "intro": "JavaScript 'whack-a-mole'-esque game",
+      "tech": ["assets/logos/js.png", "assets/logos/html5.png", "assets/logos/css3.png"],
+      "images": [
+        {
+          "image": "image1",
+          "path": "assets/projectImages/trump1.png"
+        },
+        {
+          "image": "image2",
+          "path": "assets/projectImages/trump2.png"
+        },
+        {
+          "image": "image3",
+          "path": "assets/projectImages/trump3.png"
+        }
+      ],
+      "brief": "",
+      "execution": "First team project, Over delivered on requirements.",
+      "primaryLink": "",
+      "secondaryLink": ""
+    }
+    ,{
+      "name": "Finance calculator",
+      "intro": "Loan finance calculator for Mayden Academy",
+      "tech": ["assets/logos/ts.png", "assets/logos/html5.png", "assets/logos/css3.png"],
+      "images": [
+        {
+          "image": "image1",
+          "path": "assets/projectImages/calc1.png"
+        },
+        {
+          "image": "image2",
+          "path": "assets/projectImages/calc2.png"
+        },
+        {
+          "image": "image3",
+          "path": "assets/projectImages/calc3.png"
+        }
+      ],
+      "brief": "",
+      "execution": "",
       "primaryLink": "",
       "secondaryLink": ""
     }
