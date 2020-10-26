@@ -20,6 +20,10 @@
   opacity: 0;
 }
 
+.back, .what, .who {
+  font-size: 2rem;
+}
+
 .button1 {
   background: #35363A;
   color: $light;
@@ -59,7 +63,6 @@ button {
   padding: 1rem;
   margin: 0;
   text-decoration: none;
-  font-size: 2rem;
   cursor: pointer;
   text-align: center;
   transition: background 250ms ease-in-out,

@@ -1,0 +1,52 @@
+.portfolio {
+  padding-top: 105px;
+}
+
+.portfolioContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projectThumb {
+  max-width: 25%;
+}
+
+.thumbTitle {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 2em;
+  text-align: center;
+  color: $primary
+}
+
+.thumbIntro {
+  font-family: Comfortaa, sans-serif;
+  text-align: center;
+  color: $light;
+}
+
+.thumbImageContainer {
+  flex-grow: 1;
+  flex-shrink: 1;
+  z-index: -1;
+}
+
+.thumbImage {
+  max-height: 100%;
+  max-width: 100%;
+  border: 5px solid $light;
+  border-radius: 5px;
+  object-fit: contain;
+  position: center;
+}
+
+.thumbButtons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.thumbButton {
+  font-size: 1em;
+  flex-grow: 1;
+  flex-shrink: 1;
+}

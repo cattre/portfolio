@@ -1,4 +1,4 @@
-let renderProjects = fetch('templates/project.mustache')
+fetch('templates/project.mustache')
     .then(response => {
         return response.text()
     })
@@ -7,9 +7,7 @@ let renderProjects = fetch('templates/project.mustache')
             .then(response => {
                 return response.json()
             }).then(data => {
-                let rendered = Mustache.render(template, data)
-                document.querySelector('.projectsContainer').innerHTML = rendered
-            })
+            let rendered = Mustache.render(template, data)
+            document.querySelector('.projectsContainer').innerHTML = rendered
+        })
     })
-
-

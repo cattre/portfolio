@@ -8,8 +8,9 @@
 @import "layout";
 @import "components";
 @import "animations";
-@import "project";
 @import "about";
+@import "portfolio";
+@import "project";
 
 /*JS overrides*/
 
@@ -22,5 +23,9 @@
 }
 
 .portfolio {
+	display: none;
+}
+
+.project {
 	display: none;
 }
