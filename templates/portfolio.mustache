@@ -3,7 +3,11 @@
         <div class='vert fullHeight fullWidth'>
             <span class='thumbTitle'>{{ name }}</span>
             <span class='thumbIntro'>{{ intro }}</span>
-            <span class='thumbTech'>{{ thumbTech }}</span>
+            <span class='thumbTech'>
+                {{#tech}}
+
+                {{/tech}}
+            </span>
             <div class='thumbImageContainer'>
                 <img class='thumbImage' src = '{{ images.0.path }}' alt=''>
             </div>

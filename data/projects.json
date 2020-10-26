@@ -3,7 +3,7 @@
     {
       "name": "Checkmark",
       "intro": "Decision quality assurance system for the Planning Inspectorate",
-      "tech": ["Power Apps", "SharePoint", "Power Automate"],
+      "tech": ["assets/logos/powerApps/png", "assets/logos/sharePoint/png", "assets/logos/powerAutomate/png"],
       "images": [
         {
           "image": "image1",
