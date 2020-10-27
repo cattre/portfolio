@@ -1,7 +1,6 @@
 let nameSpan = document.querySelector('.name');
 let name = ['R', 'i', 'c', 'h', 'a', 'r', 'd', ' ', 'C', 'a', 't', 't', 'e', 'r', 'i', 'l', 'l'];
 let index = 0;
-let introButtons = document.querySelectorAll('.introButton');
 window.addEventListener('load', () => {
   setTimeout(() => {
     typeName();

@@ -3,9 +3,10 @@ const aboutSection = document.querySelector('.about')
 const portfolioSection = document.querySelector('.portfolio')
 const projectSection = document.querySelector('.project')
 
-const whoButton = document.querySelectorAll('.who')
-const whatButton = document.querySelectorAll('.what')
-const backButton = document.querySelectorAll('.back')
+const introButtons = document.querySelectorAll('.introButton')
+const whoButtons = document.querySelectorAll('.who')
+const whatButtons = document.querySelectorAll('.what')
+const backButtons = document.querySelectorAll('.back')
 
 introButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -15,7 +16,7 @@ introButtons.forEach(button => {
     })
 })
 
-whoButton.forEach(button => {
+whoButtons.forEach(button => {
     button.addEventListener('click', () => {
         introSection.style.display = 'none'
         aboutSection.style.display = 'flex'
@@ -24,7 +25,7 @@ whoButton.forEach(button => {
     })
 })
 
-whatButton.forEach(button => {
+whatButtons.forEach(button => {
     button.addEventListener('click', () => {
         introSection.style.display = 'none'
         aboutSection.style.display = 'none'
@@ -33,7 +34,7 @@ whatButton.forEach(button => {
     })
 })
 
-backButton.forEach(button => {
+backButtons.forEach(button => {
     button.addEventListener('click', () => {
         introSection.style.display = 'flex'
         aboutSection.style.display = 'none'
@@ -43,9 +44,9 @@ backButton.forEach(button => {
 })
 
 window.addEventListener('load', () => {
-    let projectDetailsButton = document.querySelectorAll('.projectDetails')
+    let projectDetailsButtons = document.querySelectorAll('.projectDetails')
 
-    projectDetailsButton.forEach(button => {
+    projectDetailsButtons.forEach(button => {
         button.addEventListener('click', () => {
             introSection.style.display = 'none'
             aboutSection.style.display = 'none'
