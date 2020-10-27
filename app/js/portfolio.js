@@ -7,7 +7,6 @@ fetch('templates/portfolio.mustache')
             .then(response => {
                 return response.json()
             }).then(data => {
-            let rendered = Mustache.render(template, data)
-            document.querySelector('.portfolioContainer').innerHTML = rendered
+            document.querySelector('.portfolioContainer').innerHTML = Mustache.render(template, data)
         })
     })

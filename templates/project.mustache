@@ -9,8 +9,10 @@
                     <div class='projectSubtitle projectIntro'>
                         {{ intro }}
                     </div>
-                    <div class='tech'>
-                        <img class='techIcon' src='https://www.php.net/images/logos/new-php-logo.svg' alt='PHP logo'>
+                    <div class='techContainer'>
+                        {{#tech}}
+                            <img class='thumbTechImage' src = '{{ . }}' alt=''>
+                        {{/tech}}
                     </div>
                 </div>
             </div>

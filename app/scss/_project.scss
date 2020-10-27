@@ -24,11 +24,11 @@
   margin: 10px;
 }
 
-.tech {
+.techContainer {
   height: 50px;
   grid-area: tech;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 
 .techIcon {

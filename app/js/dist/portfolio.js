@@ -4,8 +4,7 @@ fetch('templates/portfolio.mustache').then(response => {
   fetch('data/projects.json').then(response => {
     return response.json();
   }).then(data => {
-    let rendered = Mustache.render(template, data);
-    document.querySelector('.portfolioContainer').innerHTML = rendered;
+    document.querySelector('.portfolioContainer').innerHTML = Mustache.render(template, data);
   });
 });
 //# sourceMappingURL=portfolio.js.map
