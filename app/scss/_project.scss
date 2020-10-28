@@ -37,7 +37,6 @@
 
 .projectImageContainer {
   display: flex;
-  z-index: -1;
 }
 
 .projectImageWrapper {
@@ -46,12 +45,11 @@
 }
 
 .projectImage {
+  z-index: -1;
   max-height: 100%;
   max-width: 100%;
   border: 5px solid $light;
   border-radius: 5px;
-  object-fit: contain;
-  position: center;
   &.image1 {
     transform: rotate(-5deg);
   }

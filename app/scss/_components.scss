@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  z-index: 10;
 }
 
 .cursor {
@@ -18,7 +19,9 @@
 }
 
 .introButtons {
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .back, .what, .who {

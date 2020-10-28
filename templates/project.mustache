@@ -1,49 +1,45 @@
 <article class='vert fullHeight fullWidth'>
-    <section class='horiz halfPage fullWidth'>
+    <section class='horiz fullWidth'>
         <div class='vert minHalfHeight fullWidth'>
-            <div class='vert minHalfHeight fullWidth'>
-                <span class='projectTitle'>
-                    Project: {{ name }}
-                </span>
-                <div class='projectSummary fullWidth'>
-                    <div class='projectSubtitle projectIntro'>
-                        {{ intro }}
-                    </div>
-                    <div class='techContainer'>
-                        {{#tech}}
-                            <img class='thumbTechImage' src = '{{ . }}' alt=''>
-                        {{/tech}}
-                    </div>
+            <span class='projectTitle'>
+                Project: {{ name }}
+            </span>
+            <div class='projectSummary fullWidth'>
+                <div class='projectSubtitle projectIntro'>
+                    {{ intro }}
                 </div>
-            </div>
-            <div class='projectImageContainer minHalfHeight fullWidth'>
-                {{#images}}
-                <div class='projectImageWrapper'>
-                    <img class='projectImage {{ image }}' src='{{ path }}' alt=''>
+                <div class='techContainer'>
+                    {{#tech}}
+                        <img class='thumbTechImage' src = '{{ . }}' alt=''>
+                    {{/tech}}
                 </div>
-                {{/images}}
             </div>
         </div>
     </section>
-    <section class='horiz minHalfHeight fullWidth'>
-        <div class='vert minHalfHeight minHalfWidth'>
-            <span class='vert fullwidth'>
-                <span class='sectionTitle'>
-                    The brief
-                </span>
-                <span class='body fullWidth'>
-                    {{ brief }}
-                </span>
+    <section>
+        <div class='projectImageContainer fullHeight fullWidth'>
+            {{#images}}
+            <div class='projectImageWrapper'>
+                <img class='projectImage {{ image }}' src='{{ path }}' alt=''>
+            </div>
+            {{/images}}
+        </div>
+    </section>
+    <section class='horiz halfPage fullWidth'>
+        <div class='projectText vert fullHeight'>
+            <span class='sectionTitle'>
+                The brief
+            </span>
+            <span class='body'>
+                {{ brief }}
             </span>
         </div>
-        <div class='vert minHalfHeight minHalfWidth'>
-            <span class='vert fullwidth'>
-                <span class='sectionTitle'>
-                    The execution
-                </span>
-                <span class='body fullWidth'>
-                    {{ execution }}
-                </span>
+        <div class='projectText vert fullHeight'>
+            <span class='sectionTitle'>
+                The execution
+            </span>
+            <span class='body'>
+                {{ execution }}
             </span>
         </div>
     </section>

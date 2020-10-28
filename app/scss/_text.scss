@@ -1,0 +1,30 @@
+.mainTitle {
+  font-size: 3em;
+  font-family: 'Roboto Mono', sans-serif;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-family: 'Lemon Tuesday', sans-serif;
+  font-size: 3em;
+  color: $primary;
+  text-align: center;
+}
+
+.body {
+  font-family: Comfortaa, sans-serif;
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: $light;
+}
+
+.aboutText {
+  min-width: 50%;
+  max-width: 400px;
+}
+
+.projectText {
+  min-width: 50%;
+  max-width: 400px;
+}
