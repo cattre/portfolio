@@ -27,6 +27,7 @@ whoButtons.forEach(button => {
 
 whatButtons.forEach(button => {
     button.addEventListener('click', () => {
+        projectButtons()
         introSection.style.display = 'none'
         aboutSection.style.display = 'none'
         portfolioSection.style.display = 'flex'
@@ -43,8 +44,8 @@ backButtons.forEach(button => {
     })
 })
 
-window.addEventListener('load', () => {
-    let projectDetailsButtons = document.querySelectorAll('.projectDetails')
+let projectButtons = () => {
+    const projectDetailsButtons = document.querySelectorAll('.projectDetails')
 
     projectDetailsButtons.forEach(button => {
         button.addEventListener('click', () => {
@@ -54,5 +55,6 @@ window.addEventListener('load', () => {
             projectSection.style.display = 'flex'
         })
     })
-})
+}
+
 

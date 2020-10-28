@@ -1,7 +1,7 @@
-<article class='vert'>
+<article class='vert fullHeight fullWidth'>
     <section class='horiz halfPage fullWidth'>
-        <div class='vert halfHeight fullWidth'>
-            <div class='vert halfHeight fullWidth'>
+        <div class='vert minHalfHeight fullWidth'>
+            <div class='vert minHalfHeight fullWidth'>
                 <span class='projectTitle'>
                     Project: {{ name }}
                 </span>
@@ -16,7 +16,7 @@
                     </div>
                 </div>
             </div>
-            <div class='projectImageContainer halfHeight fullWidth'>
+            <div class='projectImageContainer minHalfHeight fullWidth'>
                 {{#images}}
                 <div class='projectImageWrapper'>
                     <img class='projectImage {{ image }}' src='{{ path }}' alt=''>
@@ -25,8 +25,8 @@
             </div>
         </div>
     </section>
-    <section class='horiz halfPage fullWidth'>
-        <div class='vert halfHeight halfWidth'>
+    <section class='horiz minHalfHeight fullWidth'>
+        <div class='vert minHalfHeight minHalfWidth'>
             <span class='vert fullwidth'>
                 <span class='sectionTitle'>
                     The brief
@@ -36,7 +36,7 @@
                 </span>
             </span>
         </div>
-        <div class='vert halfHeight halfWidth'>
+        <div class='vert minHalfHeight minHalfWidth'>
             <span class='vert fullwidth'>
                 <span class='sectionTitle'>
                     The execution
