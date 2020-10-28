@@ -18,6 +18,7 @@ introButtons.forEach(button => {
 
 whoButtons.forEach(button => {
     button.addEventListener('click', () => {
+        window.scrollTo(0,0);
         introSection.style.display = 'none'
         aboutSection.style.display = 'flex'
         portfolioSection.style.display = 'none'
@@ -29,6 +30,7 @@ whatButtons.forEach(button => {
     button.addEventListener('click', () => {
         projectButtons()
         getProjects()
+        window.scrollTo(0,0);
         introSection.style.display = 'none'
         aboutSection.style.display = 'none'
         portfolioSection.style.display = 'flex'
@@ -38,6 +40,7 @@ whatButtons.forEach(button => {
 
 backButtons.forEach(button => {
     button.addEventListener('click', () => {
+        window.scrollTo(0,0);
         introSection.style.display = 'flex'
         aboutSection.style.display = 'none'
         portfolioSection.style.display = 'none'
@@ -50,6 +53,7 @@ let projectButtons = () => {
 
     projectDetailsButtons.forEach(button => {
         button.addEventListener('click', () => {
+            window.scrollTo(0,0);
             introSection.style.display = 'none'
             aboutSection.style.display = 'none'
             portfolioSection.style.display = 'none'

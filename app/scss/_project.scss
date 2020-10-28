@@ -19,9 +19,27 @@
 .projectSummary {
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-areas: 'blank intro tech';
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: 'link intro tech';
   margin: 10px;
+}
+
+.projectLink {
+  grid-area: link;
+  margin: auto;
+  border: 2px solid $light;
+  border-radius: 5px;
+  padding: 5px;
+  > a {
+    font-family: Comfortaa, sans-serif;
+    font-size: 1.5em;
+    color: $secondary;
+    text-decoration: none;
+
+    &:hover {
+      color: $light;
+    }
+  }
 }
 
 .techContainer {
