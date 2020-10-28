@@ -28,6 +28,7 @@ whoButtons.forEach(button => {
 whatButtons.forEach(button => {
     button.addEventListener('click', () => {
         projectButtons()
+        getProjects()
         introSection.style.display = 'none'
         aboutSection.style.display = 'none'
         portfolioSection.style.display = 'flex'
