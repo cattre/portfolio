@@ -2,14 +2,14 @@ const introSection = document.querySelector('.intro');
 const aboutSection = document.querySelector('.about');
 const portfolioSection = document.querySelector('.portfolio');
 const projectSection = document.querySelector('.project');
-const introButtons = document.querySelectorAll('.introButton');
+const introButtons = document.querySelectorAll('.introButtons');
 const whoButtons = document.querySelectorAll('.who');
 const whatButtons = document.querySelectorAll('.what');
 const backButtons = document.querySelectorAll('.back');
 introButtons.forEach(button => {
   button.addEventListener('click', () => {
     introButtons.forEach(button => {
-      button.classList.remove('fade', 'introButton');
+      button.classList.remove('fade');
     });
   });
 });

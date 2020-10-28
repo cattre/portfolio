@@ -1,3 +1,7 @@
+.fullPage {
+  height: 100vh;
+}
+
 .halfPage {
   height: 50vh;
 }
@@ -6,6 +10,7 @@
   display: flex;
   flex-grow: 1;
   flex-shrink: 1;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -27,6 +32,14 @@
 
 .fullWidth {
   width: 100%;
+}
+
+.maxFullHeight {
+  max-height: 100%;
+}
+
+.maxFullWidth {
+  max-width: 100%;
 }
 
 .minHalfHeight {

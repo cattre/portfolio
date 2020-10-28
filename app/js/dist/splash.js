@@ -5,9 +5,6 @@ window.addEventListener('load', () => {
   setTimeout(() => {
     typeName();
   }, 500);
-  introButtons.forEach(button => {
-    button.classList.add('fade');
-  });
 });
 
 typeName = () => {

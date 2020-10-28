@@ -14,10 +14,11 @@
 
 .fade {
   animation: fadein 1s forwards ease-in 2200ms;
+  opacity: 0;
 }
 
-.introButton {
-  opacity: 0;
+.introButtons {
+
 }
 
 .back, .what, .who {
