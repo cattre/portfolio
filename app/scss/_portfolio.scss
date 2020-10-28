@@ -10,6 +10,7 @@
 }
 
 .projectThumb {
+  background-color: RGBA(255, 255, 255, 0.1);
   border: 2px solid $light;
   border-radius: 5px;
   padding: 10px;
@@ -18,9 +19,6 @@
   max-width: 30%;
   min-width: 324px;
   margin: 20px;
-  > * {
-    padding: 5px;
-  }
 }
 
 .thumbTitle {
@@ -42,11 +40,17 @@
   height: 40px;
 }
 
+.thumbIntroContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
 .thumbIntro {
   font-family: Comfortaa, sans-serif;
   text-align: center;
   color: $light;
-  height: 40px;
 }
 
 .thumbImage {
@@ -60,12 +64,14 @@
 
 .thumbButtons {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 5px;
+  justify-content: center;
+  padding-top: 5px;
 }
 
 .thumbButton {
+  max-width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
   font-size: 1em;
   flex-grow: 1;
   flex-shrink: 1;

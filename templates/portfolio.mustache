@@ -7,11 +7,13 @@
                     <img class='thumbTechImage' src = '{{ . }}' alt=''>
                 {{/tech}}
             </div>
-            <span class='thumbIntro'>{{ intro }}</span>
+            <div class='thumbIntroContainer'>
+                <span class='thumbIntro'>{{ intro }}</span>
+            </div>
             <div class='thumbImageContainer'>
                 <img class='thumbImage' src = '{{ images.0.path }}' alt=''>
             </div>
-            <span class='thumbButtons'>
+            <span class='thumbButtons fullWidth'>
                 <button class='thumbButton button1 load' name='{{ name }}'>View project</button>
                 <button class='thumbButton button2 projectDetails' name='{{ name }}'>More details</button>
             <span>
