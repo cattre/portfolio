@@ -5,9 +5,11 @@
                 Project: {{ name }}
             </span>
             <div class='projectSummary fullWidth'>
-                <div class='projectLink'>
-                    <a href='{{ primaryLink }}' target='_blank'><span class='fa fa-play'></span> View project</a>
-                </div>
+                {{#primaryLink}}
+                    <div class='projectLink'>
+                        <a href='{{ primaryLink }}' target='_blank'><span class='fa fa-play'></span> View project</a>
+                    </div>
+                {{/primaryLink}}
                 <div class='projectSubtitle projectIntro'>
                     {{ intro }}
                 </div>
@@ -29,7 +31,7 @@
         </div>
     </section>
     <section class='horiz halfPage fullWidth'>
-        <div class='projectText vert fullHeight'>
+        <div class='projectText vert'>
             <span class='sectionTitle'>
                 The brief
             </span>
@@ -37,7 +39,7 @@
                 {{ brief }}
             </span>
         </div>
-        <div class='projectText vert fullHeight'>
+        <div class='projectText vert'>
             <span class='sectionTitle'>
                 The execution
             </span>

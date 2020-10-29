@@ -20,8 +20,11 @@
 
 .introButtons {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-basis: 100%;
+  min-height: 50%;
+  min-width: 50%;
 }
 
 .back, .what, .who {

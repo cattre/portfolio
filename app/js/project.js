@@ -7,7 +7,6 @@ const getProjects = () => {
         })
         .then(data => {
             buttons.forEach(button => {
-                console.log('yay')
                 button.addEventListener('click', () => {
                     let project = data.projects.filter(obj => obj.name === button.name)[0]
                     fetch('templates/project.mustache')
