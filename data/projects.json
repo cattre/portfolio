@@ -110,7 +110,7 @@
           "path": "assets/projectImages/calc3.png"
         }
       ],
-      "brief": "",
+      "brief": "Create a finance calculator to be used on the Mayden Academy website, enabling prospective students to calculate the time take to repay their loan, as well as any applicable admin fees.\nMust be built using TypeScript and a CSS preprocessor",
       "execution": "",
       "primaryLink": "",
       "secondaryLink": ""

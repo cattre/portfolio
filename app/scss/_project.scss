@@ -31,15 +31,18 @@
   border-radius: 5px;
   padding: 5px;
   background-color: $secondary;
+  &:hover {
+    background-color: $light;
+    border: 2px solid $light;
+    > a {
+      color: $dark;
+    }
+  }
   > a {
     font-family: Comfortaa, sans-serif;
     font-size: 1.5em;
     color: $light;
     text-decoration: none;
-
-    &:hover {
-      color: $dark;
-    }
   }
 }
 

@@ -6,9 +6,9 @@
             </span>
             <div class='projectSummary fullWidth'>
                 {{#primaryLink}}
-                    <div class='projectLink'>
+                    <button class='projectLink'>
                         <a href='{{ primaryLink }}' target='_blank'><span class='fa fa-play'></span> View project</a>
-                    </div>
+                    </button>
                 {{/primaryLink}}
                 <div class='projectSubtitle projectIntro'>
                     {{ intro }}
@@ -21,8 +21,8 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class='projectImageContainer fullHeight fullWidth'>
+    <section class='horiz fullWidth'>
+        <div class='projectImageContainer fullWidth'>
             {{#images}}
             <div class='projectImageWrapper'>
                 <img class='projectImage {{ image }}' src='{{ path }}' alt=''>
@@ -30,7 +30,7 @@
             {{/images}}
         </div>
     </section>
-    <section class='horiz halfPage fullWidth'>
+    <section class='horiz fullWidth'>
         <div class='projectText vert'>
             <span class='sectionTitle'>
                 The brief
