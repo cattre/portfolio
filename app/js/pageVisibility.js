@@ -4,14 +4,15 @@ const portfolioSection = document.querySelector('.portfolio')
 const projectSection = document.querySelector('.project')
 
 const introButtons = document.querySelectorAll('.introButtons')
+const fadeelements = document.querySelectorAll('.fade')
 const whoButtons = document.querySelectorAll('.who')
 const whatButtons = document.querySelectorAll('.what')
 const backButtons = document.querySelectorAll('.back')
 
 introButtons.forEach(button => {
     button.addEventListener('click', () => {
-        introButtons.forEach(button => {
-            button.classList.remove('fade')
+        fadeelements.forEach(element => {
+            element.classList.remove('fade')
         })
     })
 })
