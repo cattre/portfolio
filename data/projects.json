@@ -3,7 +3,20 @@
     {
       "name": "Checkmark",
       "intro": "Decision quality assurance system for the Planning Inspectorate",
-      "tech": ["assets/logos/powerApps.png", "assets/logos/sharePoint.png", "assets/logos/powerAutomate.png"],
+      "tech": [
+        {
+          "title": "Power Apps",
+          "path": "assets/logos/powerApps.png"
+        },
+        {
+          "title": "SharePoint",
+          "path": "assets/logos/sharePoint.png"
+        },
+        {
+          "title": "Power Automate",
+          "path": "assets/logos/powerAutomate.png"
+        }
+      ],
       "images": [
         {
           "image": "image1",
@@ -25,7 +38,20 @@
     {
       "name": "Blackjack",
       "intro": "PHP multiplayer card game",
-      "tech": ["assets/logos/php.png", "assets/logos/html5.png", "assets/logos/css3.png"],
+      "tech": [
+        {
+          "title": "PHP",
+          "path": "assets/logos/php.png"
+        },
+        {
+          "title": "HTML5",
+          "path": "assets/logos/html5.png"
+        },
+        {
+          "title": "CSS3",
+          "path": "assets/logos/css3.png"
+        }
+      ],
       "images": [
         {
           "image": "image1",
@@ -47,7 +73,24 @@
     {
       "name": "Beers collection",
       "intro": "PHP MySQL collection app",
-      "tech": ["assets/logos/php.png", "assets/logos/mySQL.png", "assets/logos/html5.png", "assets/logos/css3.png"],
+      "tech": [
+        {
+          "title": "PHP",
+          "path": "assets/logos/php.png"
+        },
+        {
+          "title": "MySQL",
+          "path": "assets/logos/mySQL.png"
+        },
+        {
+          "title": "HTML5",
+          "path": "assets/logos/html5.png"
+        },
+        {
+          "title": "CSS3",
+          "path": "assets/logos/css3.png"
+        }
+      ],
       "images": [
         {
           "image": "image1",
@@ -69,7 +112,20 @@
     {
       "name": "Thump a Trump",
       "intro": "JavaScript 'whack-a-mole'-esque game",
-      "tech": ["assets/logos/js.png", "assets/logos/html5.png", "assets/logos/css3.png"],
+      "tech": [
+        {
+          "title": "JavaScript",
+          "path": "assets/logos/js.png"
+        },
+        {
+          "title": "HTML5",
+          "path": "assets/logos/html5.png"
+        },
+        {
+          "title": "CSS3",
+          "path": "assets/logos/css3.png"
+        }
+      ],
       "images": [
         {
           "image": "image1",
@@ -91,7 +147,20 @@
     ,{
       "name": "Finance calculator",
       "intro": "Loan finance calculator for Mayden Academy",
-      "tech": ["assets/logos/ts.png", "assets/logos/html5.png", "assets/logos/css3.png"],
+      "tech": [
+        {
+          "title": "TypeScript",
+          "path": "assets/logos/ts.png"
+        },
+        {
+          "title": "HTML5",
+          "path": "assets/logos/html5.png"
+        },
+        {
+          "title": "CSS3",
+          "path": "assets/logos/css3.png"
+        }
+      ],
       "images": [
         {
           "image": "image1",
