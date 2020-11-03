@@ -2,7 +2,7 @@ let nameSpan = document.querySelector('.name')
 let name = ['R', 'i', 'c', 'h', 'a', 'r', 'd', ' ', 'C', 'a', 't', 't', 'e', 'r', 'i', 'l', 'l']
 let index = 0
 
-window.addEventListener('load', () => {
+window.addEventListener('pageshow', () => {
     setTimeout(() => {
         typeName()
     }, 500)
