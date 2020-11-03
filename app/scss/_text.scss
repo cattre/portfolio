@@ -30,3 +30,12 @@
   min-width: 50%;
   max-width: 400px;
 }
+
+.link {
+  color: $primary;
+  text-decoration: underline;
+  &:hover {
+    color: $light;
+    cursor: pointer;
+  }
+}

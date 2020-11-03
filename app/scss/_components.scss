@@ -50,14 +50,11 @@
   opacity: 0;
 }
 
-.back, .what, .who {
-  font-size: 2rem;
-}
-
 .button1 {
   background: #35363A;
   color: $light;
   border: none;
+  font-size: 2rem;
 }
 
 .button1:hover,
@@ -71,6 +68,7 @@
   background: $dark;
   color: $primary;
   border: none;
+  font-size: 2rem;
 }
 
 .button2:hover,

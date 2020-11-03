@@ -18,7 +18,7 @@
           "path": "assets/projectImages/CM3.png"
         }
       ],
-      "brief": "The aim was to unify all quality assurance functions across the Planning Inspectorate, increasing the scope of data captured, reducing admin overhead and the likelihood of data errors, whilst providing users with a self-service system",
+      "brief": "The aim was to unify all quality assurance functions across the Planning Inspectorate, increasing the scope of data captured, reducing admin overhead and the likelihood of data errors, whilst providing users with a self-service system.",
       "execution": "Three apps were built using Microsoft Power Apps, supported by 6 SharePoint lists/libraries and 19 Power Automate flows. The final solution had saved over 500 weeks from overall case age as of the end of the pilot phase alone.",
       "primaryLink": ""
     },
