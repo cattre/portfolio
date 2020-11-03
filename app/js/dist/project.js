@@ -4,7 +4,6 @@ const getProjects = () => {
   fetch('data/projects.json').then(response => {
     return response.json();
   }).then(data => {
-    console.log(data);
     loadButtons.forEach(button => {
       button.addEventListener('click', () => {
         let project = data.projects.filter(obj => obj.name === button.name)[0];

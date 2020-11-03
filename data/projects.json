@@ -23,6 +23,28 @@
       "primaryLink": ""
     },
     {
+      "name": "Blackjack",
+      "intro": "PHP multiplayer card game",
+      "tech": ["assets/logos/php.png", "assets/logos/html5.png", "assets/logos/css3.png"],
+      "images": [
+        {
+          "image": "image1",
+          "path": "assets/projectImages/blackjack1.png"
+        },
+        {
+          "image": "image2",
+          "path": "assets/projectImages/blackjack2.png"
+        },
+        {
+          "image": "image3",
+          "path": "assets/projectImages/blackjack3.png"
+        }
+      ],
+      "brief": "Create a basic blackjack game using PHP",
+      "execution": "I expanded on the brief a bit further than expected(!), adding card images, twist/stick, and multi-player features.",
+      "primaryLink": "/blackjack"
+    },
+    {
       "name": "Beers collection",
       "intro": "PHP MySQL collection app",
       "tech": ["assets/logos/php.png", "assets/logos/mySQL.png", "assets/logos/html5.png", "assets/logos/css3.png"],
@@ -41,30 +63,8 @@
         }
       ],
       "brief": "Create a collection app using PHP and MySQL, enabling the display of all database items as well as the addition of new ones.",
-      "execution": "",
-      "primaryLink": ""
-    },
-    {
-      "name": "Blackjack",
-      "intro": "PHP multiplayer card game",
-      "tech": ["assets/logos/php.png", "assets/logos/html5.png", "assets/logos/css3.png"],
-      "images": [
-        {
-          "image": "image1",
-          "path": "assets/projectImages/blackjack1.png"
-        },
-        {
-          "image": "image2",
-          "path": "assets/projectImages/blackjack2.png"
-        },
-        {
-          "image": "image3",
-          "path": "assets/projectImages/blackjack3.png"
-        }
-      ],
-      "brief": "All about the project",
-      "execution": "How I delivered it",
-      "primaryLink": ""
+      "execution": "The first project involving MySQL, the beers collection was built using a single HTML page and POST requests to capture user data.",
+      "primaryLink": "/beers"
     },
     {
       "name": "Thump a Trump",
@@ -84,8 +84,8 @@
           "path": "assets/projectImages/trump3.png"
         }
       ],
-      "brief": "",
-      "execution": "First team project, Over delivered on requirements.",
+      "brief": "Create a JavaScript game in the style of whack-a-mole.",
+      "execution": "The first team project, we managed to over-deliver during the sprint and created a great-looking and addictive game - just in time for the 2020 US election!",
       "primaryLink": "https://dev.io-academy.uk/projects/2020-sept/2020-sept-thump-game/"
     }
     ,{
@@ -106,9 +106,9 @@
           "path": "assets/projectImages/calc3.png"
         }
       ],
-      "brief": "Create a finance calculator to be used on the Mayden Academy website, enabling prospective students to calculate the time take to repay their loan, as well as any applicable admin fees.\nMust be built using TypeScript and a CSS preprocessor",
-      "execution": "",
-      "primaryLink": ""
+      "brief": "Create a finance calculator to be used on the Mayden Academy website, enabling prospective students to calculate the time take to repay their loan, as well as any applicable admin fees. Must be built using TypeScript and a CSS preprocessor.",
+      "execution": "I had fun with this one - matching the MA branding, building in dependent fields and validation, and calculating the loan details.",
+      "primaryLink": "/financeCalc"
     }
   ]
 }
