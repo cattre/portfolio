@@ -20,43 +20,45 @@
 
 .projectSummary {
   display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-areas: 'link intro tech';
+  grid-template-areas: 'link tech blank';
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 10px;
+}
+
+.buttonContainer {
+  flex: 1 1;
+  display: flex;
+  justify-content: center;
 }
 
 .projectLink {
   grid-area: link;
-  margin: auto;
-  border: 2px solid $secondary;
-  border-radius: 5px;
   padding: 5px;
-  background-color: $secondary;
   &:hover {
-    background-color: $light;
-    border: 2px solid $light;
     > a {
-      color: $dark;
+      color: $light;
     }
   }
   > a {
     font-family: Comfortaa, sans-serif;
     font-size: 1.5em;
-    color: $light;
+    color: $primary;
     text-decoration: none;
   }
 }
 
 .techContainer {
-  height: 50px;
   grid-area: tech;
+  height: 50px;
+  flex: 1 1;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-.techIcon {
+.techImage {
   height: 40px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .projectImageContainer {

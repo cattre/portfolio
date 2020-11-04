@@ -6,16 +6,15 @@
             </span>
             <div class='projectSummary fullWidth'>
                 {{#primaryLink}}
-                    <button class='projectLink'>
-                        <a href='{{ primaryLink }}' target='_blank'><span class='fa fa-play'></span> View project</a>
-                    </button>
+                    <div class='buttonContainer'>
+                        <button class='projectLink'>
+                            <a href='{{ primaryLink }}' target='_blank'><span class='fa fa-play'></span> View project</a>
+                        </button>
+                    </div>
                 {{/primaryLink}}
-                <div class='projectSubtitle projectIntro'>
-                    {{ intro }}
-                </div>
                 <div class='techContainer'>
                     {{#tech}}
-                        <img class='thumbTechImage' src='{{ path }}' alt='{{ title }}' title='{{ title }}'>
+                        <img class='techImage' src='{{ path }}' alt='{{ title }}' title='{{ title }}'>
                     {{/tech}}
                 </div>
             </div>
