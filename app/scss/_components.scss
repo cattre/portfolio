@@ -50,6 +50,11 @@
   opacity: 0;
 }
 
+.quickFade {
+  animation: fadein 0.25s forwards ease-in;
+  opacity: 0;
+}
+
 .button1 {
   background: #35363A;
   color: $light;
