@@ -1,47 +1,12 @@
 {
   "projects" : [
     {
-      "name": "Checkmark",
-      "intro": "Decision quality assurance system for the Planning Inspectorate",
+      "name": "Finance calculator",
+      "intro": "Loan finance calculator for Mayden Academy",
       "tech": [
         {
-          "title": "Power Apps",
-          "path": "assets/logos/powerApps.png"
-        },
-        {
-          "title": "SharePoint",
-          "path": "assets/logos/sharePoint.png"
-        },
-        {
-          "title": "Power Automate",
-          "path": "assets/logos/powerAutomate.png"
-        }
-      ],
-      "images": [
-        {
-          "image": "image1",
-          "path": "assets/projectImages/CM1.png"
-        },
-        {
-          "image": "image2",
-          "path": "assets/projectImages/CM2.png"
-        },
-        {
-          "image": "image3",
-          "path": "assets/projectImages/CM3.png"
-        }
-      ],
-      "brief": "The aim was to unify all quality assurance functions across the Planning Inspectorate, increasing the scope of data captured, reducing admin overhead and the likelihood of data errors, whilst providing users with a self-service system.",
-      "execution": "Three apps were built using Microsoft Power Apps, supported by 6 SharePoint lists/libraries and 19 Power Automate flows. The final solution had saved over 500 weeks from overall case age as of the end of the pilot phase alone.",
-      "primaryLink": ""
-    },
-    {
-      "name": "Blackjack",
-      "intro": "PHP multiplayer card game",
-      "tech": [
-        {
-          "title": "PHP",
-          "path": "assets/logos/php.png"
+          "title": "TypeScript",
+          "path": "assets/logos/ts.png"
         },
         {
           "title": "HTML5",
@@ -55,20 +20,55 @@
       "images": [
         {
           "image": "image1",
-          "path": "assets/projectImages/blackjack1.png"
+          "path": "assets/projectImages/calc1.png"
         },
         {
           "image": "image2",
-          "path": "assets/projectImages/blackjack2.png"
+          "path": "assets/projectImages/calc2.png"
         },
         {
           "image": "image3",
-          "path": "assets/projectImages/blackjack3.png"
+          "path": "assets/projectImages/calc3.png"
         }
       ],
-      "brief": "Create a basic blackjack game using PHP",
-      "execution": "I expanded on the brief a bit further than expected(!), adding card images, twist/stick, and multi-player features.",
-      "primaryLink": "/blackjack"
+      "brief": "Create a finance calculator to be used on the Mayden Academy website. This should allow prospective students to calculate the time taken to repay their loan, as well as any applicable admin fees. Must be built using TypeScript and a CSS preprocessor.",
+      "execution": "I had fun with this one - matching the MA branding, building in dependent fields and validation, and calculating the loan details.",
+      "primaryLink": "/financeCalc"
+    },
+    {
+      "name": "Thump a Trump",
+      "intro": "JavaScript 'whack-a-mole'-esque game",
+      "tech": [
+        {
+          "title": "JavaScript",
+          "path": "assets/logos/js.png"
+        },
+        {
+          "title": "HTML5",
+          "path": "assets/logos/html5.png"
+        },
+        {
+          "title": "CSS3",
+          "path": "assets/logos/css3.png"
+        }
+      ],
+      "images": [
+        {
+          "image": "image1",
+          "path": "assets/projectImages/trump1.png"
+        },
+        {
+          "image": "image2",
+          "path": "assets/projectImages/trump2.png"
+        },
+        {
+          "image": "image3",
+          "path": "assets/projectImages/trump3.png"
+        }
+      ],
+      "brief": "Create a JavaScript game in the style of whack-a-mole.",
+      "execution": "The first team project, we managed to over-deliver during the sprint and created a great-looking and addictive game - just in time for the 2020 US election!",
+      "primaryLink": "https://dev.io-academy.uk/projects/2020-sept/2020-sept-thump-game/"
     },
     {
       "name": "Beers collection",
@@ -106,16 +106,16 @@
         }
       ],
       "brief": "Create a collection app using PHP and MySQL, enabling the display of all database items as well as the addition of new ones.",
-      "execution": "The first project involving MySQL, the beers collection was built using a single HTML page and POST requests to capture user data.",
+      "execution": "The first project involving MySQL, the beers collection was built in PHP and HTML, using POST requests to capture user data.",
       "primaryLink": "/beers"
     },
     {
-      "name": "Thump a Trump",
-      "intro": "JavaScript 'whack-a-mole'-esque game",
+      "name": "Blackjack",
+      "intro": "PHP multiplayer card game",
       "tech": [
         {
-          "title": "JavaScript",
-          "path": "assets/logos/js.png"
+          "title": "PHP",
+          "path": "assets/logos/php.png"
         },
         {
           "title": "HTML5",
@@ -129,55 +129,55 @@
       "images": [
         {
           "image": "image1",
-          "path": "assets/projectImages/trump1.png"
+          "path": "assets/projectImages/blackjack1.png"
         },
         {
           "image": "image2",
-          "path": "assets/projectImages/trump2.png"
+          "path": "assets/projectImages/blackjack2.png"
         },
         {
           "image": "image3",
-          "path": "assets/projectImages/trump3.png"
+          "path": "assets/projectImages/blackjack3.png"
         }
       ],
-      "brief": "Create a JavaScript game in the style of whack-a-mole.",
-      "execution": "The first team project, we managed to over-deliver during the sprint and created a great-looking and addictive game - just in time for the 2020 US election!",
-      "primaryLink": "https://dev.io-academy.uk/projects/2020-sept/2020-sept-thump-game/"
-    }
-    ,{
-      "name": "Finance calculator",
-      "intro": "Loan finance calculator for Mayden Academy",
+      "brief": "Create a basic blackjack game using PHP",
+      "execution": "I expanded on the brief a bit, adding card images, twist/stick, and multi-player features.",
+      "primaryLink": "/blackjack"
+    },
+    {
+      "name": "Checkmark",
+      "intro": "Decision quality assurance system for the Planning Inspectorate",
       "tech": [
         {
-          "title": "TypeScript",
-          "path": "assets/logos/ts.png"
+          "title": "Power Apps",
+          "path": "assets/logos/powerApps.png"
         },
         {
-          "title": "HTML5",
-          "path": "assets/logos/html5.png"
+          "title": "SharePoint",
+          "path": "assets/logos/sharePoint.png"
         },
         {
-          "title": "CSS3",
-          "path": "assets/logos/css3.png"
+          "title": "Power Automate",
+          "path": "assets/logos/powerAutomate.png"
         }
       ],
       "images": [
         {
           "image": "image1",
-          "path": "assets/projectImages/calc1.png"
+          "path": "assets/projectImages/CM1.png"
         },
         {
           "image": "image2",
-          "path": "assets/projectImages/calc2.png"
+          "path": "assets/projectImages/CM2.png"
         },
         {
           "image": "image3",
-          "path": "assets/projectImages/calc3.png"
+          "path": "assets/projectImages/CM3.png"
         }
       ],
-      "brief": "Create a finance calculator to be used on the Mayden Academy website, enabling prospective students to calculate the time take to repay their loan, as well as any applicable admin fees. Must be built using TypeScript and a CSS preprocessor.",
-      "execution": "I had fun with this one - matching the MA branding, building in dependent fields and validation, and calculating the loan details.",
-      "primaryLink": "/financeCalc"
+      "brief": "The aim was to unify all quality assurance functions across the Planning Inspectorate, increasing the scope of data captured, reducing admin overhead and the likelihood of data errors, whilst providing users with a self-service system.",
+      "execution": "Three apps were built using Microsoft Power Apps, supported by 6 SharePoint lists/libraries and 19 Power Automate flows. The final solution had saved over 500 weeks from overall case age as of the end of the pilot phase alone.",
+      "primaryLink": ""
     }
   ]
 }
