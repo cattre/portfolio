@@ -20,7 +20,8 @@
       font-size: 50px;
       text-align: center;
       button {
-        padding: 0;
+        margin: 10px;
+        color: $light;
       }
       &:hover {
         button {
