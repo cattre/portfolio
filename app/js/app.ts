@@ -8,7 +8,7 @@ window.addEventListener('keydown', e => {
     checkCode(keys, konami)
 })
 
-checkCode = (input, code) => {
+let checkCode = (input, code) => {
     let codeLen = code.length
     let inputLen = input.length
     let checkValue = input.substring(inputLen - codeLen)

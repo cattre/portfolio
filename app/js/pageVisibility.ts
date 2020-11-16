@@ -1,23 +1,25 @@
-const introSection = document.querySelector('.intro')
-const aboutSection = document.querySelector('.about')
-const portfolioSection = document.querySelector('.portfolio')
-const projectSection = document.querySelector('.project')
+/// <reference path="project.ts" />
 
-const introButtons = document.querySelectorAll('.introButtons')
-const fadeelements = document.querySelectorAll('.fade')
-const whoButtons = document.querySelectorAll('.who')
-const whatButtons = document.querySelectorAll('.what')
-const backButtons = document.querySelectorAll('.back')
+const introSection: HTMLElement = document.querySelector('.intro')
+const aboutSection: HTMLElement = document.querySelector('.about')
+const portfolioSection: HTMLElement = document.querySelector('.portfolio')
+const projectSection: HTMLElement = document.querySelector('.project')
 
-introButtons.forEach(button => {
+const introButtons: NodeList = document.querySelectorAll('.introButtons')
+const fadeElements: NodeList = document.querySelectorAll('.fade')
+const whoButtons: NodeList = document.querySelectorAll('.who')
+const whatButtons: NodeList = document.querySelectorAll('.what')
+const backButtons: NodeList = document.querySelectorAll('.back')
+
+introButtons.forEach((button: HTMLInputElement) => {
     button.addEventListener('click', () => {
-        fadeelements.forEach(element => {
+        fadeElements.forEach((element: HTMLElement) => {
             element.classList.remove('fade')
         })
     })
 })
 
-whoButtons.forEach(button => {
+whoButtons.forEach((button: HTMLInputElement) => {
     button.addEventListener('click', () => {
         window.scrollTo(0,0);
         introSection.style.display = 'none'
@@ -27,7 +29,7 @@ whoButtons.forEach(button => {
     })
 })
 
-whatButtons.forEach(button => {
+whatButtons.forEach((button: HTMLInputElement) => {
     button.addEventListener('click', () => {
         projectButtons()
         getProjects()
@@ -39,7 +41,7 @@ whatButtons.forEach(button => {
     })
 })
 
-backButtons.forEach(button => {
+backButtons.forEach((button: HTMLInputElement) => {
     button.addEventListener('click', () => {
         window.scrollTo(0,0);
         introSection.style.display = 'flex'
@@ -50,9 +52,9 @@ backButtons.forEach(button => {
 })
 
 let projectButtons = () => {
-    const projectDetailsButtons = document.querySelectorAll('.projectDetails')
+    const projectDetailsButtons: NodeList = document.querySelectorAll('.projectDetails')
 
-    projectDetailsButtons.forEach(button => {
+    projectDetailsButtons.forEach((button: HTMLInputElement) => {
         button.addEventListener('click', () => {
             window.scrollTo(0,0);
             introSection.style.display = 'none'

@@ -1,0 +1,20 @@
+{
+  "files": [
+    "app/js/app.ts",
+    "app/js/pageVisibility.ts",
+    "app/js/portfolio.ts",
+    "app/js/project.ts",
+    "app/js/splash.ts"
+  ],
+  "compilerOptions": {
+    "removeComments": true,
+    "noImplicitAny": false,
+    "target": "es5",
+    "lib": [
+      "es2015",
+      "es2017",
+      "es2018",
+      "dom"
+    ]
+  }
+}
