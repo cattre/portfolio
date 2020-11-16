@@ -6,8 +6,8 @@
             </span>
             <div class='projectSummary fullWidth'>
                 {{#primaryLink}}
-                    <div class='buttonContainer'>
-                        <button class='projectLink'>
+                    <div class='buttonContainer projectLink'>
+                        <button class='link'>
                             <a href='{{ primaryLink }}' target='_blank'><span class='fa fa-play'></span> View project</a>
                         </button>
                     </div>
@@ -17,6 +17,13 @@
                         <img class='techImage' src='{{ path }}' alt='{{ title }}' title='{{ title }}'>
                     {{/tech}}
                 </div>
+                {{#secondaryLink}}
+                    <div class='buttonContainer repoLink'>
+                        <button class='link'>
+                            <a href='{{ secondaryLink }}' target='_blank'><span class='fa fa-play'></span> View repo</a>
+                        </button>
+                    </div>
+                {{/secondaryLink}}
             </div>
         </div>
     </section>

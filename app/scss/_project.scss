@@ -21,7 +21,7 @@
 
 .projectSummary {
   display: grid;
-  grid-template-areas: 'link tech blank';
+  grid-template-areas: 'project tech repo';
   grid-template-columns: 1fr 1fr 1fr;
   margin: 10px;
 }
@@ -32,8 +32,7 @@
   justify-content: center;
 }
 
-.projectLink {
-  grid-area: link;
+.link {
   padding: 5px;
   &:hover {
     > a {
@@ -46,6 +45,14 @@
     color: $primary;
     text-decoration: none;
   }
+}
+
+.projectLink {
+  grid-area: project;
+}
+
+.repoLink {
+  grid-area: repo;
 }
 
 .techContainer {
