@@ -32,7 +32,7 @@
         }
       ],
       "brief": "Create a collection app using advanced PHP programming and employing best practice",
-      "execution": "We used object-orientated programming in PHP. I worked as part of a pair/sub group, storing data from an API within a MySQL database, as well as filtering data within the HTML/SCSS frontend and writing associated unit tests. We learnt the benefits of following the PSR4 autoloading standards as well as SOLID principles and good design patterns.",
+      "execution": "We used object-oriented programming in PHP. I worked as part of a pair/sub group, storing data from an API within a MySQL database, as well as filtering data within the HTML/SCSS frontend and writing associated unit tests. We learnt the benefits of following the PSR4 autoloading standards as well as SOLID principles and good design patterns.",
       "primaryLink": "",
       "secondaryLink": "https://github.com/Mayden-Academy/2020-sept-sportsmvp"
     },
