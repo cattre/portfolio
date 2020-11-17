@@ -1,4 +1,4 @@
-const getProjects = () => {
+const getProjects = (): void => {
     let detailsButtons: NodeList = document.querySelectorAll('.thumbButton.projectDetails')
     let loadButtons: NodeList = document.querySelectorAll('.thumbButton.load')
 

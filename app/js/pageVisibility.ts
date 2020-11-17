@@ -1,4 +1,4 @@
-/// <reference path="project.ts" />
+/// <reference path='project.ts' />
 
 const introSection: HTMLElement = document.querySelector('.intro')
 const aboutSection: HTMLElement = document.querySelector('.about')
