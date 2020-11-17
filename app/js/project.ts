@@ -1,5 +1,3 @@
-///<reference path="../../node_modules/mustache/mustache.js" />
-
 const getProjects = () => {
     let detailsButtons: NodeList = document.querySelectorAll('.thumbButton.projectDetails')
     let loadButtons: NodeList = document.querySelectorAll('.thumbButton.load')

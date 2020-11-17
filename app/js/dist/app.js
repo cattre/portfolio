@@ -1,19 +1,15 @@
-let keys = '';
-let konami = 'arrowuparrowuparrowdownarrowdownarrowleftarrowrightarrowleftarrowrightba';
-let body = document.querySelector('body');
-window.addEventListener('keydown', e => {
-  keys += e.key.toLowerCase();
-  console.log(keys);
-  checkCode(keys, konami);
+var keys = '';
+var konami = 'arrowuparrowuparrowdownarrowdownarrowleftarrowrightarrowleftarrowrightba';
+var body = document.querySelector('body');
+window.addEventListener('keydown', function (e) {
+    keys += e.key.toLowerCase();
+    checkCode(keys, konami);
 });
-
-checkCode = (input, code) => {
-  let codeLen = code.length;
-  let inputLen = input.length;
-  let checkValue = input.substring(inputLen - codeLen);
-
-  if (checkValue === code) {
-    body.style.backgroundColor = '#FFFFFF';
-  }
+var checkCode = function (input, code) {
+    var codeLen = code.length;
+    var inputLen = input.length;
+    var checkValue = input.substring(inputLen - codeLen);
+    if (checkValue === code) {
+        body.style.backgroundColor = '#FFFFFF';
+    }
 };
-//# sourceMappingURL=app.js.map

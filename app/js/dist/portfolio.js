@@ -1,10 +1,12 @@
-fetch('templates/portfolio.mustache').then(response => {
-  return response.text();
-}).then(template => {
-  fetch('data/projects.json').then(response => {
-    return response.json();
-  }).then(data => {
-    document.querySelector('.portfolioContainer').innerHTML = Mustache.render(template, data);
-  });
+fetch('templates/portfolio.mustache')
+    .then(function (response) {
+    return response.text();
+})
+    .then(function (template) {
+    fetch('data/projects.json')
+        .then(function (response) {
+        return response.json();
+    }).then(function (data) {
+        document.querySelector('.portfolioContainer').innerHTML = Mustache.render(template, data);
+    });
 });
-//# sourceMappingURL=portfolio.js.map

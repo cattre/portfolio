@@ -1,59 +1,57 @@
-const introSection = document.querySelector('.intro');
-const aboutSection = document.querySelector('.about');
-const portfolioSection = document.querySelector('.portfolio');
-const projectSection = document.querySelector('.project');
-const introButtons = document.querySelectorAll('.introButtons');
-const fadeelements = document.querySelectorAll('.fade');
-const whoButtons = document.querySelectorAll('.who');
-const whatButtons = document.querySelectorAll('.what');
-const backButtons = document.querySelectorAll('.back');
-introButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    fadeelements.forEach(element => {
-      element.classList.remove('fade');
+var introSection = document.querySelector('.intro');
+var aboutSection = document.querySelector('.about');
+var portfolioSection = document.querySelector('.portfolio');
+var projectSection = document.querySelector('.project');
+var introButtons = document.querySelectorAll('.introButtons');
+var fadeElements = document.querySelectorAll('.fade');
+var whoButtons = document.querySelectorAll('.who');
+var whatButtons = document.querySelectorAll('.what');
+var backButtons = document.querySelectorAll('.back');
+introButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+        fadeElements.forEach(function (element) {
+            element.classList.remove('fade');
+        });
     });
-  });
 });
-whoButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    window.scrollTo(0, 0);
-    introSection.style.display = 'none';
-    aboutSection.style.display = 'flex';
-    portfolioSection.style.display = 'none';
-    projectSection.style.display = 'none';
-  });
-});
-whatButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    projectButtons();
-    getProjects();
-    window.scrollTo(0, 0);
-    introSection.style.display = 'none';
-    aboutSection.style.display = 'none';
-    portfolioSection.style.display = 'flex';
-    projectSection.style.display = 'none';
-  });
-});
-backButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    window.scrollTo(0, 0);
-    introSection.style.display = 'flex';
-    aboutSection.style.display = 'none';
-    portfolioSection.style.display = 'none';
-    projectSection.style.display = 'none';
-  });
-});
-
-let projectButtons = () => {
-  const projectDetailsButtons = document.querySelectorAll('.projectDetails');
-  projectDetailsButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      window.scrollTo(0, 0);
-      introSection.style.display = 'none';
-      aboutSection.style.display = 'none';
-      portfolioSection.style.display = 'none';
-      projectSection.style.display = 'flex';
+whoButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+        window.scrollTo(0, 0);
+        introSection.style.display = 'none';
+        aboutSection.style.display = 'flex';
+        portfolioSection.style.display = 'none';
+        projectSection.style.display = 'none';
     });
-  });
+});
+whatButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+        projectButtons();
+        getProjects();
+        window.scrollTo(0, 0);
+        introSection.style.display = 'none';
+        aboutSection.style.display = 'none';
+        portfolioSection.style.display = 'flex';
+        projectSection.style.display = 'none';
+    });
+});
+backButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+        window.scrollTo(0, 0);
+        introSection.style.display = 'flex';
+        aboutSection.style.display = 'none';
+        portfolioSection.style.display = 'none';
+        projectSection.style.display = 'none';
+    });
+});
+var projectButtons = function () {
+    var projectDetailsButtons = document.querySelectorAll('.projectDetails');
+    projectDetailsButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            window.scrollTo(0, 0);
+            introSection.style.display = 'none';
+            aboutSection.style.display = 'none';
+            portfolioSection.style.display = 'none';
+            projectSection.style.display = 'flex';
+        });
+    });
 };
-//# sourceMappingURL=pageVisibility.js.map
