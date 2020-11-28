@@ -1,6 +1,50 @@
 {
   "projects" : [
     {
+      "name": "Tasks",
+      "intro": "MVC to do app",
+      "tech": [
+        {
+          "title": "PHP",
+          "path": "assets/logos/php.png"
+        },
+        {
+          "title": "JavaScript",
+          "path": "assets/logos/js.png"
+        },
+        {
+          "title": "MySQL",
+          "path": "assets/logos/mySQL.png"
+        },
+        {
+          "title": "HTML5",
+          "path": "assets/logos/html5.png"
+        },
+        {
+          "title": "Bootstrap",
+          "path": "assets/logos/bootstrap.png"
+        }
+      ],
+      "images": [
+        {
+          "image": "image1",
+          "path": "assets/projectImages/tasks1.png"
+        },
+        {
+          "image": "image2",
+          "path": "assets/projectImages/tasks2.png"
+        },
+        {
+          "image": "image3",
+          "path": "assets/projectImages/tasks3.png"
+        }
+      ],
+      "brief": "Create a to do app using MVC and the Slim framework",
+      "execution": "In this personal project I started with a Slim skeleton app, connecting to a MySQL database and implementing controllers to add, edit, update and delete tasks. I then added users and login sessions to control the visibility of tasks.",
+      "primaryLink": "https://tasks.richardcatterill.tech",
+      "secondaryLink": "https://github.com/cattre/todo"
+    },
+    {
       "name": "The Real MVP",
       "intro": "OOP sports collection app",
       "tech": [
@@ -33,7 +77,7 @@
       ],
       "brief": "Create a collection app using advanced PHP programming and employing best practice",
       "execution": "We used object-oriented programming in PHP. I worked as part of a pair/sub group, storing data from an API within a MySQL database, as well as filtering data within the HTML/SCSS frontend and writing associated unit tests. We learnt the benefits of following the PSR4 autoloading standards as well as SOLID principles and good design patterns.",
-      "primaryLink": "",
+      "primaryLink": "https://dev.io-academy.uk/projects/2020-sept/2020-sept-sportsmvp",
       "secondaryLink": "https://github.com/Mayden-Academy/2020-sept-sportsmvp"
     },
     {
