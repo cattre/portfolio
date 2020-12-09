@@ -8,7 +8,7 @@ const getProjects = (): void => {
         })
         .then((data: object): void => {
             loadButtons.forEach((button: HTMLInputElement) => {
-                button.addEventListener('click', (): void => {
+                button.addEventListener('click', (e): void => {
                     let project = data['projects'].filter((obj: object) => obj['name'] === button.name)[0]
                     window.open(project.primaryLink)
                 })
