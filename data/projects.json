@@ -1,7 +1,7 @@
 {
   "projects" : [
     {
-      "name": "Tilly",
+      "name": "tilly",
       "intro": "React social media app",
       "tech": [
         {
@@ -47,12 +47,12 @@
       "execution": "For our final team project, we split into teams of four. We decided to use the MERN stack, building the front end with React and the API using Node and GraphQL, connecting to a Mongo database. I focussed on delivering the API and then moved to the front end when this was complete. We worked well as a team and delivered more than expected in the time available.",
       "primaryLink": "",
       "secondaryLink": "https://github.com/Mayden-Academy/2020-sept-tilly-ui",
-      "secondaryLinkText": "UI repo",
+      "secondaryLinkText": "ui repo",
       "tertiaryLink": "https://github.com/Mayden-Academy/2020-sept-tilly-api",
-      "tertiaryLinkText": "API repo"
+      "tertiaryLinkText": "api repo"
     },
     {
-      "name": "Tasks",
+      "name": "tasks",
       "intro": "MVC to do app",
       "tech": [
         {
@@ -94,10 +94,10 @@
       "execution": "In this personal project I started with a Slim skeleton app, connecting to a MySQL database and implementing controllers to add, edit, update and delete tasks. I then added users and login sessions to control the visibility of tasks.",
       "primaryLink": "https://tasks.richardcatterill.tech",
       "secondaryLink": "https://github.com/cattre/todo",
-      "secondaryLinkText": "View repo"
+      "secondaryLinkText": "view repo"
     },
     {
-      "name": "The Real MVP",
+      "name": "the real MVP",
       "intro": "OOP sports collection app",
       "tech": [
         {
@@ -131,10 +131,10 @@
       "execution": "We used object-oriented programming in PHP. I worked as part of a pair/sub group, storing data from an API within a MySQL database, as well as filtering data within the HTML/SCSS frontend and writing associated unit tests. We learnt the benefits of following the PSR4 autoloading standards as well as SOLID principles and good design patterns.",
       "primaryLink": "https://dev.io-academy.uk/projects/2020-sept/2020-sept-sportsmvp",
       "secondaryLink": "https://github.com/Mayden-Academy/2020-sept-sportsmvp",
-      "secondaryLinkText": "View repo"
+      "secondaryLinkText": "view repo"
     },
     {
-      "name": "Finance calculator",
+      "name": "finance calculator",
       "intro": "Loan finance calculator for Mayden Academy",
       "tech": [
         {
@@ -168,10 +168,10 @@
       "execution": "I had fun with this one - matching the MA branding, building in dependent fields and validation, and calculating the loan details.",
       "primaryLink": "/financeCalc",
       "secondaryLink": "https://github.com/cattre/financeCalc",
-      "secondaryLinkText": "View repo"
+      "secondaryLinkText": "view repo"
     },
     {
-      "name": "Thump a Trump",
+      "name": "thump a trump",
       "intro": "JavaScript 'whack-a-mole'-esque game",
       "tech": [
         {
@@ -205,10 +205,10 @@
       "execution": "The first team project, we managed to over-deliver during the sprint and created a great-looking and addictive game - just in time for the 2020 US election! I worked on the timing and scoring logic, as well as some of the interactions. We used pair programming predominantly as well as a mob effort at the end to deliver a last minute bonus feature. We used GIT to collaboratively work on the same codebase.",
       "primaryLink": "https://dev.io-academy.uk/projects/2020-sept/2020-sept-thump-game/",
       "secondaryLink": "https://github.com/Mayden-Academy/2020-sept-thump-game",
-      "secondaryLinkText": "View repo"
+      "secondaryLinkText": "view repo"
     },
     {
-      "name": "Beers collection",
+      "name": "beers collection",
       "intro": "PHP MySQL collection app",
       "tech": [
         {
@@ -246,10 +246,10 @@
       "execution": "The first project involving MySQL, I built the beers collection using PHP and HTML, using POST requests to capture user data. I also used sessions to retain filter selections.",
       "primaryLink": "/beers",
       "secondaryLink": "https://github.com/cattre/beers",
-      "secondaryLinkText": "View repo"
+      "secondaryLinkText": "view repo"
     },
     {
-      "name": "Blackjack",
+      "name": "blackjack",
       "intro": "PHP multiplayer card game",
       "tech": [
         {
@@ -283,10 +283,10 @@
       "execution": "My first project exploring PHP, I expanded on the initial brief, adding card images, twist/stick, and multi-player features.",
       "primaryLink": "/blackjack",
       "secondaryLink": "https://github.com/cattre/blackjack",
-      "secondaryLinkText": "View repo"
+      "secondaryLinkText": "view repo"
     },
     {
-      "name": "Checkmark",
+      "name": "checkmark",
       "intro": "Decision quality assurance system for the Planning Inspectorate",
       "tech": [
         {
