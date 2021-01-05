@@ -53,6 +53,9 @@
 
 .repoLink {
   grid-area: repo;
+  flex: 1 1;
+  display: flex;
+  justify-content: center;
 }
 
 .techContainer {

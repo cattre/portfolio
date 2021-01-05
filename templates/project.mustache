@@ -22,6 +22,11 @@
                         <button class='link'>
                             <a href='{{ secondaryLink }}' target='_blank'><span class='fa fa-play'></span> View repo</a>
                         </button>
+                        {{#tertiaryLink}}
+                            <button class='link'>
+                                <a href='{{ tertiaryLink }}' target='_blank'><span class='fa fa-play'></span> View 2nd repo</a>
+                            </button>
+                        {{/tertiaryLink}}
                     </div>
                 {{/secondaryLink}}
             </div>

@@ -1,6 +1,55 @@
 {
   "projects" : [
     {
+      "name": "Tilly",
+      "intro": "React social media app",
+      "tech": [
+        {
+          "title": "React",
+          "path": "assets/logos/react.png"
+        },
+        {
+          "title": "Node",
+          "path": "assets/logos/nodejs.png"
+        },
+        {
+          "title": "MongoDB",
+          "path": "assets/logos/mongodb.png"
+        },
+        {
+          "title": "GraphQL",
+          "path": "assets/logos/graphql.png"
+        },
+        {
+          "title": "HTML5",
+          "path": "assets/logos/html5.png"
+        },
+        {
+          "title": "CSS3",
+          "path": "assets/logos/css3.png"
+        }
+      ],
+      "images": [
+        {
+          "image": "image1",
+          "path": "assets/projectImages/tilly1.png"
+        },
+        {
+          "image": "image2",
+          "path": "assets/projectImages/tilly2.png"
+        },
+        {
+          "image": "image3",
+          "path": "assets/projectImages/tilly3.png"
+        }
+      ],
+      "brief": "Create a new social media platform with a 'today I learned' theme",
+      "execution": "For our final team project, we split into teams of four. We decided to use the MERN stack, building the front end with React and the API using Node and GraphQL, connecting to a Mongo database. I focussed on delivering the API and then moved to the front end when this was complete. We worked well as a team and delivered more than expected in the time available.",
+      "primaryLink": "",
+      "secondaryLink": "https://github.com/Mayden-Academy/2020-sept-tilly-ui",
+      "tertiaryLink": "https://github.com/Mayden-Academy/2020-sept-tilly-api"
+    },
+    {
       "name": "Tasks",
       "intro": "MVC to do app",
       "tech": [
