@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d07333e2-5ba4-4ff2-b099-d842bdbe9de9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/_portfolio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/_portfolio.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/_project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/_project.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/projects.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/project.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project.mustache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +53,7 @@
       <workItem from="1607501852180" duration="313000" />
       <workItem from="1607583400380" duration="36000" />
       <workItem from="1608396808958" duration="912000" />
-      <workItem from="1609776087520" duration="7985000" />
+      <workItem from="1609776087520" duration="8420000" />
     </task>
     <servers />
   </component>
