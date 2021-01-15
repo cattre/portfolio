@@ -43,9 +43,10 @@
           "path": "assets/projectImages/tilly3.png"
         }
       ],
-      "brief": "Create a new social media platform with a 'today I learned' theme",
-      "execution": "For our final team project, we split into teams of four. We decided to use the MERN stack, building the front end with React and the API using Node and GraphQL, connecting to a Mongo database. I focussed on delivering the API and then moved to the front end when this was complete. We worked well as a team and delivered more than expected in the time available.",
-      "primaryLink": "",
+      "brief": "Create a new social media platform with a 'today I learned' theme. This was our final team project and we were given the freedom to choose the tech used as well as the project methodology.",
+      "execution": "We decided to use the MERN stack for this one. I worked on building a Node API, using Express and GraphQL to connect to a Mongo Atlas database. I also worked on the React front end, writing fetch requests to connect to the API.",
+      "execution2": "We worked really well as a smaller team, delivering a lot of requirements in the initial sprint. Two of us have subsequently continued to work on additional improvements (mainly on the front end) to see how far we can take the project.\n",
+      "primaryLink": "https://tilly.richardcatterill.tech",
       "secondaryLink": "https://github.com/Mayden-Academy/2020-sept-tilly-ui",
       "secondaryLinkText": "ui repo",
       "tertiaryLink": "https://github.com/Mayden-Academy/2020-sept-tilly-api",
@@ -128,7 +129,8 @@
         }
       ],
       "brief": "Create a collection app using advanced PHP programming and employing best practice",
-      "execution": "We used object-oriented programming in PHP. I worked as part of a pair/sub group, storing data from an API within a MySQL database, as well as filtering data within the HTML/SCSS frontend and writing associated unit tests. We learnt the benefits of following the PSR4 autoloading standards as well as SOLID principles and good design patterns.",
+      "execution": "We built the app using object-oriented programming in PHP. I worked as part of a pair/sub group, storing data from an API within a MySQL database, as well as filtering data within the HTML/SCSS frontend and writing associated unit tests.",
+      "execution2": "We learnt the benefits of following the PSR4 autoloading standards as well as SOLID principles and good design patterns.",
       "primaryLink": "https://dev.io-academy.uk/projects/2020-sept/2020-sept-sportsmvp",
       "secondaryLink": "https://github.com/Mayden-Academy/2020-sept-sportsmvp",
       "secondaryLinkText": "view repo"
@@ -202,7 +204,8 @@
         }
       ],
       "brief": "Create a JavaScript game in the style of whack-a-mole.",
-      "execution": "The first team project, we managed to over-deliver during the sprint and created a great-looking and addictive game - just in time for the 2020 US election! I worked on the timing and scoring logic, as well as some of the interactions. We used pair programming predominantly as well as a mob effort at the end to deliver a last minute bonus feature. We used GIT to collaboratively work on the same codebase.",
+      "execution": "The first team project, we managed to over-deliver during the sprint and created a great-looking and addictive game - just in time for the 2020 US election! I worked on the timing and scoring logic, as well as some of the interactions.",
+      "execution2": "We used pair programming predominantly as well as a mob effort at the end to deliver a last minute bonus feature. We used GIT to collaboratively work on the same codebase.",
       "primaryLink": "https://dev.io-academy.uk/projects/2020-sept/2020-sept-thump-game/",
       "secondaryLink": "https://github.com/Mayden-Academy/2020-sept-thump-game",
       "secondaryLinkText": "view repo"
@@ -317,7 +320,8 @@
         }
       ],
       "brief": "The aim was to unify all quality assurance functions across the Planning Inspectorate, increasing the scope of data captured, reducing admin overhead and the likelihood of data errors, whilst providing users with a self-service system.",
-      "execution": "I built three apps using Microsoft Power Apps, supported by 6 SharePoint lists/libraries and 19 Power Automate flows. I worked on the project for just over a year, collaborating closely with the product owner to refine the solution. At the point of handover it had saved over 500 weeks from overall case age as of the end of the pilot phase alone.",
+      "execution": "I built three apps using Microsoft Power Apps, supported by 6 SharePoint lists/libraries and 19 Power Automate flows. I worked on the project for just over a year, collaborating closely with the product owner to refine the solution.",
+      "execution2": "At the point of handover it had saved over 500 weeks from overall case age as of the end of the pilot phase alone.",
       "primaryLink": "",
       "secondaryLink": ""
     }

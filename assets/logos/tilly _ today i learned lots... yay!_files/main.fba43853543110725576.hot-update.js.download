@@ -1,0 +1,429 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/Components/Profile/index.js":
+/*!*****************************************!*\
+  !*** ./src/Components/Profile/index.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _ProfileHeader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ProfileHeader */ "./src/Components/Profile/ProfileHeader/index.js");
+/* harmony import */ var _Create__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Create */ "./src/Components/Create/index.js");
+/* harmony import */ var _Following_Sidebar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Following/Sidebar */ "./src/Following/Sidebar.js");
+/* harmony import */ var _Following_UserList__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Following/UserList */ "./src/Following/UserList.js");
+/* harmony import */ var _Functions_follow__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../Functions/follow */ "./src/Functions/follow.js");
+/* harmony import */ var _Functions_unfollow__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../Functions/unfollow */ "./src/Functions/unfollow.js");
+/* harmony import */ var _Functions_getLessons__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../Functions/getLessons */ "./src/Functions/getLessons.js");
+/* harmony import */ var _Functions_getFollowing__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../Functions/getFollowing */ "./src/Functions/getFollowing.js");
+/* harmony import */ var _Functions_getFollowers__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../Functions/getFollowers */ "./src/Functions/getFollowers.js");
+/* harmony import */ var _Functions_getUserData__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../Functions/getUserData */ "./src/Functions/getUserData.js");
+/* harmony import */ var _profile_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./profile.css */ "./src/Components/Profile/profile.css");
+/* harmony import */ var _profile_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_profile_css__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+
+var _jsxFileName = "/mnt/c/Users/r_cat/PhpstormProjects/2020-sept-tilly-ui/src/Components/Profile/index.js";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Profile extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+  constructor(props) {
+    super(props);
+    this.abortController = new AbortController();
+
+    this.componentDidMount = () => {
+      this.getUserData(this.props.match.params.username, this.abortController).then(data => {
+        this.setUserDataInState(data);
+      });
+    };
+
+    this.componentDidUpdate = (prevProps, prevState, snapshot) => {
+      if (prevProps !== this.props) {
+        this.getUserData(this.props.match.params.username, this.abortController).then(data => {
+          this.setUserDataInState(data);
+        });
+      }
+    };
+
+    this.componentWillUnmount = () => {
+      this.abortController.abort();
+    };
+
+    this.setUserDataInState = data => {
+      if (data.data.username === null) {
+        this.setState({
+          userNotFound: true
+        });
+      } else {
+        this.setState({
+          id: data.data.username.id,
+          username: data.data.username.username,
+          name: data.data.username.name,
+          email: data.data.username.email,
+          description: data.data.username.description
+        });
+        this.getFollowingData();
+        this.getLessonData();
+      }
+    };
+
+    this.getLessonData = () => {
+      this.getLessons(this.props.match.params.username, this.abortController).then(data => {
+        this.setState({
+          lessons: data
+        });
+      });
+    };
+
+    this.getFollowingData = () => {
+      if (this.props.match.params.username) {
+        this.getFollowing(this.props.match.params.username, this.abortController).then(data => {
+          this.setState({
+            following: data.data.username.following
+          });
+        });
+        this.getFollowers(this.props.match.params.username, this.abortController).then(data => {
+          this.setState({
+            followers: data.data.username.followers
+          });
+        });
+      }
+
+      if (this.props.currentUser.username) {
+        let allFollowing = [];
+        let youMayKnow = [];
+        this.getFollowing(this.props.currentUser.username, this.abortController).then(data => {
+          this.setState({
+            currentUserFollowing: data.data.username.following
+          });
+          return Promise.all(data.data.username.following.map(user => {
+            return this.getFollowing(user.username, this.abortController);
+          }));
+        }).then(data => {
+          data.forEach(following => {
+            allFollowing = allFollowing.concat(following.data.username.following);
+          });
+          allFollowing = allFollowing.filter(userObj => {
+            return allFollowing.find(user => {
+              if (user.id === this.props.currentUser.id) {
+                return false;
+              }
+
+              return user.id === userObj.id;
+            }) === userObj;
+          });
+
+          while (youMayKnow.length < 5) {
+            youMayKnow.push(allFollowing[Math.floor(Math.random() * allFollowing.length)]);
+          }
+
+          this.setState({
+            youMayKnow: youMayKnow
+          });
+        });
+      }
+    };
+
+    this.followAction = event => {
+      this.follow(event, this.abortController).then(data => {
+        this.getFollowingData();
+      });
+    };
+
+    this.unfollowAction = event => {
+      this.unfollow(event, this.abortController).then(data => {
+        this.getFollowingData();
+      });
+    };
+
+    this.addLesson = text => {
+      let stateCopy = { ...this.state
+      };
+      const lesson = {
+        lesson: text,
+        date: "just now"
+      };
+      stateCopy.lessons.unshift(lesson);
+      this.setState({ ...stateCopy
+      });
+    };
+
+    this.renderSwitch = content => {
+      switch (content) {
+        case "teachers":
+          return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_Following_UserList__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            sidebar: false,
+            name: "teachers",
+            listTitle: this.state.username + "'s teachers",
+            username: this.state.username,
+            userList: this.state.following,
+            loggedIn: this.props.currentUser.loggedIn,
+            onFollow: this.followAction,
+            onUnfollow: this.unfollowAction,
+            currentUserUsername: this.props.currentUser.username,
+            currentUserFollowing: this.state.currentUserFollowing
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 164,
+            columnNumber: 24
+          }, this);
+
+        case "students":
+          return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_Following_UserList__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            sidebar: false,
+            name: "students",
+            listTitle: this.state.username + "'s students",
+            username: this.state.username,
+            userList: this.state.followers,
+            loggedIn: this.props.currentUser.loggedIn,
+            onFollow: this.followAction,
+            onUnfollow: this.unfollowAction,
+            currentUserUsername: this.props.currentUser.username,
+            currentUserFollowing: this.state.currentUserFollowing
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 177,
+            columnNumber: 24
+          }, this);
+
+        case "youMayKnow":
+          return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_Following_UserList__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            sidebar: false,
+            name: "teachers",
+            listTitle: this.state.username + "'s potential chums",
+            username: this.state.username,
+            userList: this.state.youMayKnow,
+            loggedIn: this.props.currentUser.loggedIn,
+            onFollow: this.followAction,
+            onUnfollow: this.unfollowAction,
+            currentUserUsername: this.props.currentUser.username,
+            currentUserFollowing: this.state.currentUserFollowing
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 190,
+            columnNumber: 24
+          }, this);
+
+        default:
+          return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("section", {
+            id: "my-lessons",
+            className: "primary",
+            children: [this.props.currentUser.username === this.props.match.params.username ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("h3", {
+              children: "my lessons"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 205,
+              columnNumber: 25
+            }, this) : /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("h3", {
+              children: [this.state.username, "'s lessons"]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 207,
+              columnNumber: 25
+            }, this), this.state.lessons.map((lesson, i) => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+              className: "lesson",
+              children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("span", {
+                className: "fade-text small",
+                children: lesson.date
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 211,
+                columnNumber: 29
+              }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+                children: lesson.lesson
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 214,
+                columnNumber: 29
+              }, this)]
+            }, "lesson" + i, true, {
+              fileName: _jsxFileName,
+              lineNumber: 210,
+              columnNumber: 25
+            }, this))]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 203,
+            columnNumber: 24
+          }, this);
+      }
+    };
+
+    this.state = {
+      id: "",
+      username: "",
+      name: "",
+      email: "",
+      description: "",
+      lessons: [],
+      following: [],
+      followers: [],
+      currentUserFollowing: [],
+      userNotFound: false,
+      youMayKnow: []
+    };
+    this.getUserData = _Functions_getUserData__WEBPACK_IMPORTED_MODULE_11__["default"].bind(this);
+    this.getLessons = _Functions_getLessons__WEBPACK_IMPORTED_MODULE_8__["default"].bind(this);
+    this.follow = _Functions_follow__WEBPACK_IMPORTED_MODULE_6__["default"].bind(this);
+    this.unfollow = _Functions_unfollow__WEBPACK_IMPORTED_MODULE_7__["default"].bind(this);
+    this.getFollowing = _Functions_getFollowing__WEBPACK_IMPORTED_MODULE_9__["default"].bind(this);
+    this.getFollowers = _Functions_getFollowers__WEBPACK_IMPORTED_MODULE_10__["default"].bind(this);
+  }
+
+  render() {
+    return this.state.userNotFound ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("h2", {
+      className: "userNotFound",
+      children: "user not found"
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 225,
+      columnNumber: 39
+    }, this) : /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_ProfileHeader__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        id: this.state.id,
+        currentUser: this.props.currentUser,
+        currentUserFollowing: this.state.currentUserFollowing,
+        username: this.props.match.params.username,
+        name: this.state.name,
+        lessons: this.state.lessons,
+        description: this.state.description,
+        following: this.state.following,
+        onFollow: this.followAction,
+        onUnfollow: this.unfollowAction
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 228,
+        columnNumber: 17
+      }, this), this.props.currentUser.username === this.props.match.params.username && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_Create__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        id: this.state.id,
+        currentUser: this.props.currentUser,
+        onAddLesson: this.addLesson
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 241,
+        columnNumber: 17
+      }, this), this.renderSwitch(this.props.match.params.following), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_Following_Sidebar__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        sidebar: true,
+        username: this.props.match.params.username,
+        following: this.state.following,
+        followers: this.state.followers,
+        youMayKnow: this.state.youMayKnow,
+        loggedIn: this.props.currentUser.loggedIn,
+        onFollow: this.followAction,
+        onUnfollow: this.unfollowAction,
+        currentUserUsername: this.props.currentUser.username,
+        currentUserFollowing: this.state.currentUserFollowing
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 280,
+        columnNumber: 17
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 227,
+      columnNumber: 13
+    }, this);
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Profile);
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ })
+
+})
+//# sourceMappingURL=main.fba43853543110725576.hot-update.js.map
